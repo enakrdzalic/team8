@@ -17,6 +17,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 FmodManager="*uid://cds10pm7hwn3p"
+GameManager="*uid://lobdb67fg7a8"
+AudioManager="*uid://cx7qlcwrth1s4"
+SceneManager="*uid://cygy0nghpy6wa"
 
 [display]
 
