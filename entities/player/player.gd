@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 @export var SPEED = 300.0
+@export var weapon_damage : int = 1
+@export var health: int = 5
 
 var last_direction := Vector2.RIGHT
 var is_attacking: bool = false
@@ -9,6 +11,8 @@ var hitbox_offset : Vector2
 var dragged_body: Node2D = null
 var dragged_body_parent: Node = null
 var drag_axis := Vector2.ZERO
+
+# var enemy : CharacterBody2D
 
 
 func _ready() -> void:
@@ -114,9 +118,13 @@ func release() -> void:
 	# play_animation("release", last_direction)
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	if is_attacking:
+	if is_attacking and body.is_in_group("Enemy"):
 		print(body.name + " hit")
-		# TODO: Dealing damage to the body
+		body.take_damage(weapon_damage)
+
+func take_damage(damage: int) -> void:
+	# health = maxi(0, health - damage)
+	print("hitted")
 
 
 func _on_drag_hitbox_body_entered(body: Node2D) -> void:
