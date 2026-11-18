@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://hw2ryeke50e2" path="res://entities/enemies/sample_enemy.tscn" id="2_0xm2m"]
 [ext_resource type="TileSet" uid="uid://de6k4qigqvqu" path="res://Assets/Art/tilesets/forest_tileset.tres" id="3_forest"]
 [ext_resource type="Script" path="res://maps/zone_camera.gd" id="4_zones"]
+[ext_resource type="Script" path="res://entities/player/flashlight.gd" id="5_flash"]
+[ext_resource type="Script" path="res://UI/night_mode.gd" id="6_night"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wall0"]
 size = Vector2(16, 1536)
@@ -101,9 +103,36 @@ position = Vector2(624, 384)
 [node name="Camera2D" parent="Player"]
 enabled = false
 
+[node name="Flashlight" type="PointLight2D" parent="Player"]
+script = ExtResource("5_flash")
+
 [node name="ZoneCamera" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 script = ExtResource("4_zones")
 
 [node name="SampleEnemy" parent="." unique_id=1827295212 instance=ExtResource("2_0xm2m")]
 position = Vector2(1944, 184)
+
+[node name="NightMode" type="Node2D" parent="."]
+script = ExtResource("6_night")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="NightMode"]
+color = Color(1, 1, 1, 1)
+
+[node name="UI" type="CanvasLayer" parent="NightMode"]
+
+[node name="FlashlightButton" type="Button" parent="NightMode/UI"]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 196.0
+offset_bottom = 72.0
+toggle_mode = true
+text = "Flashlight"
+
+[node name="GlowButton" type="Button" parent="NightMode/UI"]
+offset_left = 24.0
+offset_top = 80.0
+offset_right = 196.0
+offset_bottom = 128.0
+toggle_mode = true
+text = "Glow"
