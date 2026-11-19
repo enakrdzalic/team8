@@ -20,6 +20,7 @@ texture = ExtResource("7_city")
 script = ExtResource("8_blocks")
 
 [node name="Player" parent="." unique_id=1437222079 instance=ExtResource("1_ig7tw")]
+
 position = Vector2(1484, 1804)
 
 [node name="Camera2D" parent="Player"]

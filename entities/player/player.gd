@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 @export var SPEED = 300.0
+@export var weapon_damage : int = 1
+@export var health: int = 5
 
 var last_direction := Vector2.RIGHT
 var is_attacking: bool = false
@@ -9,6 +11,8 @@ var hitbox_offset : Vector2
 var dragged_body: Node2D = null
 var dragged_body_parent: Node = null
 var drag_axis := Vector2.ZERO
+
+# var enemy : CharacterBody2D
 
 
 func _ready() -> void:
@@ -79,20 +83,22 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		$AttackHitbox/CollisionShape2D.set_deferred("disabled", true)
 	
 func update_hitbox_offset() -> void:
-	$DragHitbox.position = last_direction * 11.0
-	$DragHitbox.rotation = last_direction.angle()
 	var x := hitbox_offset.x
 	var y := hitbox_offset.y
 
 	match last_direction:
 		Vector2.LEFT:
 			$AttackHitbox.position = Vector2(-x, y)
+			$DragHitbox.position = Vector2(-x, y)
 		Vector2.RIGHT:
 			$AttackHitbox.position = Vector2(x, y)
+			$DragHitbox.position = Vector2(x, y)
 		Vector2.UP:
 			$AttackHitbox.position = Vector2(y, -x)
+			$DragHitbox.position = Vector2(y, -x)
 		Vector2.DOWN:
 			$AttackHitbox.position = Vector2(-y, x)
+			$DragHitbox.position = Vector2(-y, x)
 
 func drag() -> void:
 	is_dragging = true
@@ -114,9 +120,13 @@ func release() -> void:
 	# play_animation("release", last_direction)
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	if is_attacking:
+	if is_attacking and body.is_in_group("Enemy"):
 		print(body.name + " hit")
-		# TODO: Dealing damage to the body
+		body.take_damage(weapon_damage)
+
+func take_damage(damage: int) -> void:
+	# health = maxi(0, health - damage)
+	print("hitted")
 
 
 func _on_drag_hitbox_body_entered(body: Node2D) -> void:
@@ -131,6 +141,8 @@ func _drag_body(body: Node2D) -> void:
 	if not is_dragging or is_instance_valid(dragged_body) or not is_instance_valid(body):
 		return
 	if body == self or body.is_ancestor_of(self) or is_ancestor_of(body):
+		return
+	if body.is_in_group(&"Enemy") and body.get(&"is_dead") != true:
 		return
 	dragged_body = body
 	dragged_body_parent = body.get_parent()
