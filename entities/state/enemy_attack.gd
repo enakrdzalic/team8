@@ -3,6 +3,7 @@ class_name EnemyAttack
 
 @export var enemy : CharacterBody2D
 @export var attack_damage: int = 1
+@export var attacking_distance = 45
 
 var player: CharacterBody2D
 var hit_player_this_swing := false
@@ -13,6 +14,10 @@ func enter():
 	player = get_tree().get_first_node_in_group("Player") as CharacterBody2D
 
 func physicsUpdate(_delta: float) -> void:
+	if enemy.health <= 0:
+		Transitioned.emit(self, "EnemyDie")
+		return
+		
 	if not is_instance_valid(enemy):
 		return
 
@@ -29,7 +34,7 @@ func physicsUpdate(_delta: float) -> void:
 	var offset = player.global_position - enemy.global_position
 	var distance = offset.length()
 
-	if distance <= 45.0:
+	if distance <= attacking_distance:
 		if not is_zero_approx(offset.x):
 			sprite.flip_h = offset.x < 0.0
 		update_hitbox_offset(enemy.to_local(player.global_position))

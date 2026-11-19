@@ -9,4 +9,12 @@
 position = Vector2(408, 345)
 
 [node name="SampleEnemy" parent="." unique_id=1827295212 instance=ExtResource("2_0xm2m")]
-position = Vector2(573, 348)
+position = Vector2(573, 502)
+
+[node name="PointA" parent="SampleEnemy/PatrolPoints" parent_id_path=PackedInt32Array(1827295212, 1599839405) index="0" unique_id=1025544620]
+position = Vector2(800, 500)
+
+[node name="PointB" parent="SampleEnemy/PatrolPoints" parent_id_path=PackedInt32Array(1827295212, 1599839405) index="1" unique_id=1244206325]
+position = Vector2(300, 500)
+
+[editable path="SampleEnemy"]

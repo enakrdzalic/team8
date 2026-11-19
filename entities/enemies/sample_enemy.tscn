@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://d5b8x6kdmpo8" path="res://entities/state/enemy_idle.gd" id="4_snhs7"]
 [ext_resource type="Script" uid="uid://cbh7gkiirpga5" path="res://entities/state/enemy_chase.gd" id="5_jfsri"]
 [ext_resource type="Script" uid="uid://dyga88p0nvo47" path="res://entities/state/enemy_attack.gd" id="6_snhs7"]
+[ext_resource type="Script" uid="uid://cidv3rdrxvk6b" path="res://entities/state/enemy_die.gd" id="7_lc015"]
+[ext_resource type="Script" uid="uid://8crtgu8jyn5r" path="res://entities/state/enemy_patrol.gd" id="8_g6jqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jfsri"]
 atlas = ExtResource("2_jfsri")
@@ -215,9 +217,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f3rpb"]
 size = Vector2(19.999998, 15.333334)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_r0x5e"]
-radius = 289.27
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjgsu"]
 size = Vector2(12, 20)
 
@@ -229,18 +228,17 @@ script = ExtResource("1_mdlp7")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=542169778]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_xji4p")
-animation = &"enemy_attack"
+animation = &"enemy_idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1813359488]
 position = Vector2(1.9999994, -0.33333206)
 shape = SubResource("RectangleShape2D_f3rpb")
 
 [node name="Sight" type="Area2D" parent="." unique_id=443188606]
-visible = false
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sight" unique_id=1793041065]
-shape = SubResource("CircleShape2D_r0x5e")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sight" unique_id=1909352680]
+polygon = PackedVector2Array(0, 0, 70, -40, 85, 0, 70, 40)
 
 [node name="AttackHitbox" type="Area2D" parent="." unique_id=1152683796]
 position = Vector2(19.5, -2.5)
@@ -256,14 +254,13 @@ initial_state = NodePath("EnemyIdle")
 
 [node name="EnemyIdle" type="Node" parent="StateMachine" unique_id=754617441 node_paths=PackedStringArray("enemy")]
 script = ExtResource("4_snhs7")
-wander_speed = 30.0
-detection_range = 150.0
 enemy = NodePath("../..")
 metadata/_custom_type_script = "uid://d5b8x6kdmpo8"
 
 [node name="EnemyChase" type="Node" parent="StateMachine" unique_id=189409968 node_paths=PackedStringArray("enemy")]
 script = ExtResource("5_jfsri")
-move_speed = 60.0
+move_speed = 120.0
+stop_distance = 45.0
 lose_range = 200.0
 enemy = NodePath("../..")
 metadata/_custom_type_script = "uid://cbh7gkiirpga5"
@@ -272,5 +269,26 @@ metadata/_custom_type_script = "uid://cbh7gkiirpga5"
 script = ExtResource("6_snhs7")
 enemy = NodePath("../..")
 metadata/_custom_type_script = "uid://dyga88p0nvo47"
+
+[node name="EnemyDie" type="Node" parent="StateMachine" unique_id=605935982 node_paths=PackedStringArray("enemy")]
+script = ExtResource("7_lc015")
+enemy = NodePath("../..")
+metadata/_custom_type_script = "uid://cidv3rdrxvk6b"
+
+[node name="EnemyPatrol" type="Node" parent="StateMachine" unique_id=1881646201 node_paths=PackedStringArray("point_a", "point_b", "enemy", "sight")]
+script = ExtResource("8_g6jqv")
+patrol_speed = 40.0
+point_a = NodePath("../../PatrolPoints/PointA")
+point_b = NodePath("../../PatrolPoints/PointB")
+enemy = NodePath("../..")
+sight = NodePath("../../Sight")
+metadata/_custom_type_script = "uid://8crtgu8jyn5r"
+
+[node name="PatrolPoints" type="Node2D" parent="." unique_id=1599839405]
+top_level = true
+
+[node name="PointA" type="Marker2D" parent="PatrolPoints" unique_id=1025544620]
+
+[node name="PointB" type="Marker2D" parent="PatrolPoints" unique_id=1244206325]
 
 [connection signal="body_entered" from="AttackHitbox" to="StateMachine/EnemyAttack" method="_on_attack_hitbox_body_entered"]

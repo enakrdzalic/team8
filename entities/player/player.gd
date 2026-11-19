@@ -83,20 +83,22 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		$AttackHitbox/CollisionShape2D.set_deferred("disabled", true)
 	
 func update_hitbox_offset() -> void:
-	$DragHitbox.position = last_direction * 11.0
-	$DragHitbox.rotation = last_direction.angle()
 	var x := hitbox_offset.x
 	var y := hitbox_offset.y
 
 	match last_direction:
 		Vector2.LEFT:
 			$AttackHitbox.position = Vector2(-x, y)
+			$DragHitbox.position = Vector2(-x, y)
 		Vector2.RIGHT:
 			$AttackHitbox.position = Vector2(x, y)
+			$DragHitbox.position = Vector2(x, y)
 		Vector2.UP:
 			$AttackHitbox.position = Vector2(y, -x)
+			$DragHitbox.position = Vector2(y, -x)
 		Vector2.DOWN:
 			$AttackHitbox.position = Vector2(-y, x)
+			$DragHitbox.position = Vector2(-y, x)
 
 func drag() -> void:
 	is_dragging = true
@@ -139,6 +141,8 @@ func _drag_body(body: Node2D) -> void:
 	if not is_dragging or is_instance_valid(dragged_body) or not is_instance_valid(body):
 		return
 	if body == self or body.is_ancestor_of(self) or is_ancestor_of(body):
+		return
+	if body.is_in_group(&"Enemy") and body.get(&"is_dead") != true:
 		return
 	dragged_body = body
 	dragged_body_parent = body.get_parent()
