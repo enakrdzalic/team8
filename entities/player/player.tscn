@@ -397,6 +397,7 @@ size = Vector2(13.5, 17.5)
 size = Vector2(9, 17.5)
 
 [node name="Player" type="CharacterBody2D" unique_id=1437222079 groups=["Player"]]
+y_sort_enabled = true
 scale = Vector2(2, 2)
 motion_mode = 1
 script = ExtResource("1_sglur")

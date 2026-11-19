@@ -134,16 +134,13 @@ func _on_drag_hitbox_body_entered(body: Node2D) -> void:
 		return
 	if body.is_ancestor_of(self) or is_ancestor_of(body):
 		return
+	if not body.is_in_group(&"Enemy") or body.get(&"is_dead") != true:
+		return
+
 	_drag_body.call_deferred(body)
 
 
 func _drag_body(body: Node2D) -> void:
-	if not is_dragging or is_instance_valid(dragged_body) or not is_instance_valid(body):
-		return
-	if body == self or body.is_ancestor_of(self) or is_ancestor_of(body):
-		return
-	if body.is_in_group(&"Enemy") and body.get(&"is_dead") != true:
-		return
 	dragged_body = body
 	dragged_body_parent = body.get_parent()
 	var offset := body.global_position - global_position
