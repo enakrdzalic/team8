@@ -153,4 +153,3 @@ func _drag_body(body: Node2D) -> void:
 		body.add_collision_exception_with(self)
 	body.reparent(self, true)
 	print(body.name + " dragged")
-

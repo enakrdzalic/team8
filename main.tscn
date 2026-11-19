@@ -2,19 +2,60 @@
 
 [ext_resource type="PackedScene" uid="uid://cfmhek0hfjner" path="res://entities/player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://hw2ryeke50e2" path="res://entities/enemies/sample_enemy.tscn" id="2_0xm2m"]
+[ext_resource type="Script" path="res://maps/zone_camera.gd" id="4_zones"]
+[ext_resource type="Script" path="res://entities/player/flashlight.gd" id="5_flash"]
+[ext_resource type="Script" path="res://UI/night_mode.gd" id="6_night"]
+[ext_resource type="Texture2D" path="res://Assets/Art/city_map.png" id="7_city"]
+[ext_resource type="Script" path="res://maps/city_collision.gd" id="8_blocks"]
 
 [node name="Main" type="Node2D" unique_id=1912012056]
+y_sort_enabled = true
+
+[node name="City" type="Sprite2D" parent="."]
+texture_filter = 1
+centered = false
+texture = ExtResource("7_city")
+
+[node name="Buildings" type="Node2D" parent="."]
+script = ExtResource("8_blocks")
 
 [node name="Player" parent="." unique_id=1437222079 instance=ExtResource("1_ig7tw")]
-position = Vector2(408, 345)
+
+position = Vector2(1484, 1804)
+
+[node name="Camera2D" parent="Player"]
+enabled = false
+
+[node name="Flashlight" type="PointLight2D" parent="Player"]
+script = ExtResource("5_flash")
+
+[node name="ZoneCamera" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+script = ExtResource("4_zones")
 
 [node name="SampleEnemy" parent="." unique_id=1827295212 instance=ExtResource("2_0xm2m")]
-position = Vector2(573, 502)
+position = Vector2(1200, 660)
 
-[node name="PointA" parent="SampleEnemy/PatrolPoints" parent_id_path=PackedInt32Array(1827295212, 1599839405) index="0" unique_id=1025544620]
-position = Vector2(800, 500)
+[node name="NightMode" type="Node2D" parent="."]
+script = ExtResource("6_night")
 
-[node name="PointB" parent="SampleEnemy/PatrolPoints" parent_id_path=PackedInt32Array(1827295212, 1599839405) index="1" unique_id=1244206325]
-position = Vector2(300, 500)
+[node name="CanvasModulate" type="CanvasModulate" parent="NightMode"]
+color = Color(1, 1, 1, 1)
 
-[editable path="SampleEnemy"]
+[node name="UI" type="CanvasLayer" parent="NightMode"]
+
+[node name="FlashlightButton" type="Button" parent="NightMode/UI"]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 196.0
+offset_bottom = 72.0
+toggle_mode = true
+text = "Flashlight"
+
+[node name="GlowButton" type="Button" parent="NightMode/UI"]
+offset_left = 24.0
+offset_top = 80.0
+offset_right = 196.0
+offset_bottom = 128.0
+toggle_mode = true
+text = "Glow"
