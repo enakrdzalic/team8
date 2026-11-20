@@ -252,9 +252,11 @@ shape = SubResource("RectangleShape2D_pjgsu")
 script = ExtResource("3_jfsri")
 initial_state = NodePath("EnemyIdle")
 
-[node name="EnemyIdle" type="Node" parent="StateMachine" unique_id=754617441 node_paths=PackedStringArray("enemy")]
+[node name="EnemyIdle" type="Node" parent="StateMachine" unique_id=754617441 node_paths=PackedStringArray("enemy", "spawn_point")]
 script = ExtResource("4_snhs7")
+move_speed = 200.0
 enemy = NodePath("../..")
+spawn_point = NodePath("../../PatrolPoints/PointA")
 metadata/_custom_type_script = "uid://d5b8x6kdmpo8"
 
 [node name="EnemyChase" type="Node" parent="StateMachine" unique_id=189409968 node_paths=PackedStringArray("enemy")]
