@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfiorpl8t7mxo"
-path="res://.godot/imported/PlantShadow.png-95fd73412ec02362c8fa9e3965fb6d63.ctex"
+path="res://.godot/imported/PlantShadow.png-4bea569bc3ad7a9965913be48fe6d155.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/tilesets/resurrected/PlantShadow.png"
-dest_files=["res://.godot/imported/PlantShadow.png-95fd73412ec02362c8fa9e3965fb6d63.ctex"]
+source_file="res://Assets/Art/tilesets/resurrected/PlantShadow.png"
+dest_files=["res://.godot/imported/PlantShadow.png-4bea569bc3ad7a9965913be48fe6d155.ctex"]
 
 [params]
 

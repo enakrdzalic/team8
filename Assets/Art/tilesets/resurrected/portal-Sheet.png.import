@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn4dmfeyqjngo"
-path="res://.godot/imported/portal-Sheet.png-4a29e24fceeb07dd7f33ecc961de194f.ctex"
+path="res://.godot/imported/portal-Sheet.png-9817ac7a0b1d95dc75a20b5abf33fee8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/tilesets/resurrected/portal-Sheet.png"
-dest_files=["res://.godot/imported/portal-Sheet.png-4a29e24fceeb07dd7f33ecc961de194f.ctex"]
+source_file="res://Assets/Art/tilesets/resurrected/portal-Sheet.png"
+dest_files=["res://.godot/imported/portal-Sheet.png-9817ac7a0b1d95dc75a20b5abf33fee8.ctex"]
 
 [params]
 
