@@ -1,8 +1,12 @@
 extends CharacterBody2D
 
+const ZoneCamera = preload("res://maps/zone_camera.gd")
+
 @export var SPEED = 300.0
 @export var weapon_damage : int = 1
 @export var health: int = 5
+@export var move_factor: float = 2
+@export var camera_zoom_factor: float = 2
 
 var last_direction := Vector2.RIGHT
 var is_attacking: bool = false
@@ -12,6 +16,8 @@ var dragged_body: Node2D = null
 var dragged_body_parent: Node = null
 var drag_axis := Vector2.ZERO
 
+@onready var zone_camera := get_node_or_null("../ZoneCamera") as ZoneCamera
+@onready var zone_camera_zoom = zone_camera.zoom
 # var enemy : CharacterBody2D
 
 
@@ -45,7 +51,7 @@ func process_movement() -> void:
 	if direction != Vector2.ZERO:
 		last_direction = direction
 		if is_dragging:
-			velocity = direction * (SPEED / 2)
+			velocity = direction * (SPEED / move_factor)
 		else:
 			velocity = direction * SPEED
 		update_hitbox_offset()
@@ -117,6 +123,11 @@ func release() -> void:
 	dragged_body = null
 	dragged_body_parent = null
 	drag_axis = Vector2.ZERO
+
+	if !is_dragging and zone_camera.zoom == zone_camera_zoom * camera_zoom_factor:
+		var tween := create_tween()
+		tween.tween_property(zone_camera, "zoom", zone_camera_zoom, 0.1)
+
 	# play_animation("release", last_direction)
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
@@ -141,6 +152,9 @@ func _on_drag_hitbox_body_entered(body: Node2D) -> void:
 
 
 func _drag_body(body: Node2D) -> void:
+	var tween := create_tween()
+	tween.tween_property(zone_camera, "zoom", zone_camera_zoom * camera_zoom_factor, 0.1)
+
 	dragged_body = body
 	dragged_body_parent = body.get_parent()
 	var offset := body.global_position - global_position

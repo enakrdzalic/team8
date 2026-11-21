@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://hw2ryeke50e2" path="res://entities/enemies/sample_enemy.tscn" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://bgq4nemio4wyn" path="res://maps/zone_camera.gd" id="4_zones"]
 [ext_resource type="Script" uid="uid://du68dvp5ugv2c" path="res://entities/player/flashlight.gd" id="5_flash"]
-[ext_resource type="Script" uid="uid://bl7qfwxtdrm5y" path="res://ui/night_mode.gd" id="6_night"]
-[ext_resource type="Texture2D" uid="uid://df5j57iwlgk66" path="res://assets/art/city_map.png" id="7_city"]
+[ext_resource type="Script" uid="uid://bl7qfwxtdrm5y" path="res://UI/night_mode.gd" id="6_night"]
+[ext_resource type="Texture2D" uid="uid://df5j57iwlgk66" path="res://Assets/Art/city_map.png" id="7_city"]
 [ext_resource type="Script" uid="uid://dur3xre0b0h23" path="res://maps/city_collision.gd" id="8_blocks"]
 
 [node name="Main" type="Node2D" unique_id=1912012056]
@@ -22,6 +22,8 @@ script = ExtResource("8_blocks")
 
 [node name="Player" parent="." unique_id=1437222079 instance=ExtResource("1_ig7tw")]
 position = Vector2(1484, 1804)
+move_factor = 2.5
+camera_zoom_factor = 1.5
 
 [node name="Flashlight" type="PointLight2D" parent="Player" unique_id=614478455]
 script = ExtResource("5_flash")
