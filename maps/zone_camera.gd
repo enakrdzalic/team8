@@ -33,13 +33,13 @@ func _ready() -> void:
 	if player_camera:
 		player_camera.enabled = false
 	make_current()
-	current_zone = _zone_containing(player.global_position, 0)
+	current_zone = zone_containing(player.global_position, 0)
 	global_position = _clamped(player.global_position, ZONES[current_zone])
 
 
 func _process(delta: float) -> void:
 	var pos := player.global_position
-	var zone := _zone_containing(pos, current_zone)
+	var zone := zone_containing(pos, current_zone)
 	if zone != current_zone:
 		current_zone = zone
 		glide_speed = GLIDE
@@ -50,7 +50,7 @@ func _process(delta: float) -> void:
 	global_position = global_position.lerp(target, blend)
 
 
-func _zone_containing(point: Vector2, fallback: int) -> int:
+func zone_containing(point: Vector2, fallback: int = -1) -> int:
 	if fallback >= 0 and fallback < ZONES.size() and ZONES[fallback].has_point(point):
 		return fallback
 	var best := -1

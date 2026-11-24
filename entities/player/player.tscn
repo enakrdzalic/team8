@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cfmhek0hfjner"]
 
 [ext_resource type="Script" uid="uid://br1i8xxy426vc" path="res://entities/player/player.gd" id="1_sglur"]
-[ext_resource type="Texture2D" uid="uid://5t1yq4kisfb5" path="res://assets/placeholders/player/Player.png" id="2_abrql"]
+[ext_resource type="Texture2D" uid="uid://5t1yq4kisfb5" path="res://Assets/placeholders/player/Player.png" id="2_abrql"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_abrql"]
 atlas = ExtResource("2_abrql")
@@ -397,10 +397,13 @@ size = Vector2(13.5, 17.5)
 size = Vector2(9, 17.5)
 
 [node name="Player" type="CharacterBody2D" unique_id=1437222079 groups=["Player"]]
+y_sort_enabled = true
 scale = Vector2(2, 2)
 motion_mode = 1
 script = ExtResource("1_sglur")
 SPEED = 150.0
+move_factor = 2.5
+camera_zoom_factor = 1.5
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1911459571]
 texture_filter = 1
@@ -430,10 +433,9 @@ metadata/_edit_group_ = true
 shape = SubResource("RectangleShape2D_oivb8")
 disabled = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position_smoothing_enabled = true
-position_smoothing_speed = 5.0
+[node name="Camera2D" type="Camera2D" parent="." unique_id=642997054]
 zoom = Vector2(2, 2)
+position_smoothing_enabled = true
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="AttackHitbox" to="." method="_on_hitbox_body_entered"]

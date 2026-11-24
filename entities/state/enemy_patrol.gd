@@ -33,7 +33,7 @@ func physicsUpdate(delta: float) -> void:
 		player = get_tree().get_first_node_in_group(&"Player") as CharacterBody2D
 
 	for body in sight.get_overlapping_bodies():
-		if body.is_in_group(&"Player"):
+		if body.is_in_group(&"Player") and enemy.can_target_player(body):
 			Transitioned.emit(self, "EnemyChase")
 			return
 		

@@ -22,13 +22,14 @@ func physicsUpdate(_delta: float) -> void:
 		return
 
 	enemy.velocity = Vector2.ZERO
-	if sprite.animation == &"enemy_attack" and sprite.is_playing():
-		try_damage_player()
-		return
-
 	if not is_instance_valid(player):
 		player = get_tree().get_first_node_in_group("Player") as CharacterBody2D
-	if not is_instance_valid(player):
+	if not enemy.can_target_player(player):
+		Transitioned.emit(self, "EnemyIdle")
+		return
+
+	if sprite.animation == &"enemy_attack" and sprite.is_playing():
+		try_damage_player()
 		return
 
 	var offset = player.global_position - enemy.global_position
