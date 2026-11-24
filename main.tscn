@@ -2,60 +2,47 @@
 
 [ext_resource type="PackedScene" uid="uid://cfmhek0hfjner" path="res://entities/player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://hw2ryeke50e2" path="res://entities/enemies/sample_enemy.tscn" id="2_0xm2m"]
-[ext_resource type="Script" path="res://maps/zone_camera.gd" id="4_zones"]
-[ext_resource type="Script" path="res://entities/player/flashlight.gd" id="5_flash"]
-[ext_resource type="Script" path="res://UI/night_mode.gd" id="6_night"]
-[ext_resource type="Texture2D" path="res://Assets/Art/city_map.png" id="7_city"]
-[ext_resource type="Script" path="res://maps/city_collision.gd" id="8_blocks"]
+[ext_resource type="Script" uid="uid://bgq4nemio4wyn" path="res://maps/zone_camera.gd" id="4_zones"]
+[ext_resource type="Script" uid="uid://du68dvp5ugv2c" path="res://entities/player/flashlight.gd" id="5_flash"]
+[ext_resource type="Script" uid="uid://bl7qfwxtdrm5y" path="res://UI/night_mode.gd" id="6_night"]
+[ext_resource type="Texture2D" uid="uid://df5j57iwlgk66" path="res://Assets/Art/city_map.png" id="7_city"]
+[ext_resource type="Script" uid="uid://dur3xre0b0h23" path="res://maps/city_collision.gd" id="8_blocks"]
 
 [node name="Main" type="Node2D" unique_id=1912012056]
 y_sort_enabled = true
 
-[node name="City" type="Sprite2D" parent="."]
+[node name="City" type="Sprite2D" parent="." unique_id=1478201133]
 texture_filter = 1
-centered = false
 texture = ExtResource("7_city")
+centered = false
 
-[node name="Buildings" type="Node2D" parent="."]
+[node name="Buildings" type="Node2D" parent="." unique_id=615068328]
 script = ExtResource("8_blocks")
 
 [node name="Player" parent="." unique_id=1437222079 instance=ExtResource("1_ig7tw")]
-
 position = Vector2(1484, 1804)
 
-[node name="Camera2D" parent="Player"]
-enabled = false
-
-[node name="Flashlight" type="PointLight2D" parent="Player"]
+[node name="Flashlight" type="PointLight2D" parent="Player" unique_id=621906276]
 script = ExtResource("5_flash")
 
-[node name="ZoneCamera" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+[node name="ZoneCamera" type="Camera2D" parent="." unique_id=560604422]
+zoom = Vector2(3, 3)
 script = ExtResource("4_zones")
 
 [node name="SampleEnemy" parent="." unique_id=1827295212 instance=ExtResource("2_0xm2m")]
 position = Vector2(1200, 660)
 
-[node name="NightMode" type="Node2D" parent="."]
+[node name="NightMode" type="Node2D" parent="." unique_id=797586602]
 script = ExtResource("6_night")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="NightMode"]
-color = Color(1, 1, 1, 1)
+[node name="CanvasModulate" type="CanvasModulate" parent="NightMode" unique_id=222293618]
 
-[node name="UI" type="CanvasLayer" parent="NightMode"]
+[node name="UI" type="CanvasLayer" parent="NightMode" unique_id=1015668586]
 
-[node name="FlashlightButton" type="Button" parent="NightMode/UI"]
+[node name="FlashlightButton" type="Button" parent="NightMode/UI" unique_id=1359434207]
 offset_left = 24.0
 offset_top = 24.0
 offset_right = 196.0
 offset_bottom = 72.0
 toggle_mode = true
 text = "Flashlight"
-
-[node name="GlowButton" type="Button" parent="NightMode/UI"]
-offset_left = 24.0
-offset_top = 80.0
-offset_right = 196.0
-offset_bottom = 128.0
-toggle_mode = true
-text = "Glow"
