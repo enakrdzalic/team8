@@ -10,6 +10,7 @@ enum GameState {
 signal state_changed(new_state: GameState)
 
 var current_state: GameState = GameState.MAIN_MENU
+var fade_from_black := false
 
 func set_state(new_state: GameState) -> void:
     if current_state == new_state:

@@ -1,4 +1,3 @@
-
 [gd_scene format=3 uid="uid://c3ybdg3vo7sqx"]
 
 [ext_resource type="PackedScene" uid="uid://cfmhek0hfjner" path="res://entities/player/player.tscn" id="1_ig7tw"]
@@ -8,6 +7,7 @@
 [ext_resource type="Script" uid="uid://bl7qfwxtdrm5y" path="res://UI/night_mode.gd" id="6_night"]
 [ext_resource type="Texture2D" uid="uid://df5j57iwlgk66" path="res://Assets/Art/city_map.png" id="7_city"]
 [ext_resource type="Script" uid="uid://dur3xre0b0h23" path="res://maps/city_collision.gd" id="8_blocks"]
+[ext_resource type="Script" uid="uid://b7n3fadeblack" path="res://UI/fade_in.gd" id="9_fade"]
 
 [node name="Main" type="Node2D" unique_id=1912012056]
 y_sort_enabled = true
@@ -23,8 +23,6 @@ script = ExtResource("8_blocks")
 
 [node name="Player" parent="." unique_id=1437222079 instance=ExtResource("1_ig7tw")]
 position = Vector2(1484, 1804)
-move_factor = 2.5
-camera_zoom_factor = 1.5
 
 [node name="Flashlight" type="PointLight2D" parent="Player" unique_id=614478455]
 script = ExtResource("5_flash")
@@ -82,6 +80,18 @@ position = Vector2(2600, 2430.395)
 
 [node name="PointB" parent="SampleEnemy3/PatrolPoints" index="1" unique_id=1244206325]
 position = Vector2(-650, 0)
+
+[node name="FadeIn" type="CanvasLayer" parent="." unique_id=884726410]
+layer = 128
+script = ExtResource("9_fade")
+
+[node name="Cover" type="ColorRect" parent="FadeIn" unique_id=884726411]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [editable path="SampleEnemy"]
 [editable path="SampleEnemy2"]
