@@ -5,7 +5,6 @@ const DARK := Color(0.05, 0.05, 0.06)
 
 @onready var darkness: CanvasModulate = $CanvasModulate
 @onready var button: Button = $UI/FlashlightButton
-@onready var glow_button: Button = $UI/GlowButton
 
 var flashlight: PointLight2D
 
@@ -13,30 +12,18 @@ var flashlight: PointLight2D
 func _ready() -> void:
 	flashlight = get_parent().get_node("Player/Flashlight")
 	_style_button(button)
-	_style_button(glow_button)
 	button.toggled.connect(_on_toggled)
-	glow_button.toggled.connect(_on_glow_toggled)
 	_apply(false)
-	_apply_glow(false)
 
 
 func _on_toggled(on: bool) -> void:
 	_apply(on)
 
 
-func _on_glow_toggled(on: bool) -> void:
-	_apply_glow(on)
-
-
 func _apply(on: bool) -> void:
 	darkness.color = DARK if on else Color.WHITE
 	flashlight.enabled = on
 	button.text = "Flashlight on" if on else "Flashlight"
-
-
-func _apply_glow(on: bool) -> void:
-	flashlight.call("set_glow_enabled", on)
-	glow_button.text = "Glow on" if on else "Glow"
 
 
 func _style_button(target: Button) -> void:
