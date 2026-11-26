@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bp6gg2237o35r"]
+
+[ext_resource type="Texture2D" uid="uid://cwc80h65pnhf3" path="res://assets/placeholders/images-removebg-preview.png" id="1_akivk"]
+[ext_resource type="Script" uid="uid://p846oah1xp5u" path="res://entities/player/dart.gd" id="1_npqr3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sj1cp"]
+height = 358.0
+
+[node name="Dart" type="Area2D" unique_id=634878476]
+texture_filter = 1
+rotation = 1.5707964
+scale = Vector2(0.03, 0.03)
+script = ExtResource("1_npqr3")
+speed = 10
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1690968118]
+texture_filter = 1
+texture = ExtResource("1_akivk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1374777111]
+shape = SubResource("CapsuleShape2D_sj1cp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
