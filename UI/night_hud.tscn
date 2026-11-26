@@ -1,0 +1,77 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/night_hud.gd" id="1_hud"]
+
+[node name="NightHud" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_hud")
+
+[node name="KillButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -220.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = 72.0
+grow_horizontal = 0
+text = "Kill monster"
+
+[node name="DragButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -220.0
+offset_top = 80.0
+offset_right = -24.0
+offset_bottom = 128.0
+grow_horizontal = 0
+text = "Drag monster"
+
+[node name="KillCount" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -300.0
+offset_top = 24.0
+offset_right = -232.0
+offset_bottom = 72.0
+grow_horizontal = 0
+mouse_filter = 2
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="DragCount" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -300.0
+offset_top = 80.0
+offset_right = -232.0
+offset_bottom = 128.0
+grow_horizontal = 0
+mouse_filter = 2
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="EndNightButton" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -98.0
+offset_top = 24.0
+offset_right = 98.0
+offset_bottom = 72.0
+grow_horizontal = 2
+text = "End night"
+
+[node name="Fade" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
