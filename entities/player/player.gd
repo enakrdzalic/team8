@@ -84,9 +84,10 @@ func process_animation() -> void:
 		play_animation("idle", last_direction)
 	
 func play_animation(prefix: String, dir: Vector2) -> void:
-	if dir.x != 0:
-		$AnimatedSprite2D.flip_h = dir.x < 0
+	if dir.x > 0:
 		$AnimatedSprite2D.play(prefix + "_right")
+	elif dir.x < 0:
+		$AnimatedSprite2D.play(prefix + "_left")
 	elif dir.y > 0:
 		$AnimatedSprite2D.play(prefix + "_down")
 	elif dir.y < 0:
