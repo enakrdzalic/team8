@@ -12,6 +12,9 @@ func _ready() -> void:
 
 
 func _on_begin_pressed() -> void:
+	button.disabled = true
+	$UI_Click.post_event()
+	await get_tree().create_timer(0.3).timeout
 	SceneManager.change_scene(INTRO_SCENE)
 
 

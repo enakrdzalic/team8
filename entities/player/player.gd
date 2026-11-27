@@ -223,3 +223,4 @@ func shoot() -> void:
 	get_tree().current_scene.add_child(dart_instance)
 	dart_instance.global_position = $DartPoint.global_position
 	dart_instance.set_direction(last_direction)
+	$DartPoint/Tranquillizer.post_event()

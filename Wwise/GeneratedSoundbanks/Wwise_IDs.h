@@ -21,10 +21,12 @@ namespace AK
         static const AkUniqueID PLAY_MD_MAIN = 1327240191U;
         static const AkUniqueID PLAY_MDAMAGE_MAIN = 1978162964U;
         static const AkUniqueID PLAY_MDRAG_MAIN = 2526232351U;
+        static const AkUniqueID PLAY_MOUSE_CLICK_MAIN = 1623423870U;
         static const AkUniqueID PLAY_MS_MAIN = 1164316878U;
         static const AkUniqueID PLAY_MUSIC_MAIN = 1614763749U;
         static const AkUniqueID PLAY_TORCH = 2025845440U;
         static const AkUniqueID PLAY_TRANQILLIZER_MAIN = 3024457733U;
+        static const AkUniqueID PLAY_TYPING_MAIN = 176559217U;
         static const AkUniqueID STOP_COMBAT_MUSIC = 970928956U;
     } // namespace EVENTS
 

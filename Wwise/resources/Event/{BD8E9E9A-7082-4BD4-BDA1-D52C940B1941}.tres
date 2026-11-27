@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://tkqhmia7akgh"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_Tranqillizer_Main"
+id = 3024457733
+guid = "{BD8E9E9A-7082-4BD4-BDA1-D52C940B1941}"
+dummy = true

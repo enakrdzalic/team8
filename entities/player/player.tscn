@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bp6gg2237o35r" path="res://entities/player/Dart.tscn" id="2_sglur"]
 [ext_resource type="WwiseEvent" uid="uid://d4fmxg1huai32" path="res://Wwise/resources/Event/{92747C86-C481-4B22-A986-B340C1F36FBA}.tres" id="3_bls4j"]
 [ext_resource type="Texture2D" uid="uid://dakbd7by16bjr" path="res://Assets/Art/player/spritesheet.png" id="3_sglur"]
+[ext_resource type="WwiseEvent" uid="uid://tkqhmia7akgh" path="res://Wwise/resources/Event/{BD8E9E9A-7082-4BD4-BDA1-D52C940B1941}.tres" id="4_8fjmc"]
 [ext_resource type="WwiseEvent" uid="uid://bakidqpkpn8ah" path="res://Wwise/resources/Event/{2F14897B-45E4-4DC2-A861-68659BF21D7D}.tres" id="4_fkugw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bls4j"]
@@ -596,6 +597,10 @@ zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 
 [node name="DartPoint" type="Marker2D" parent="." unique_id=327287197]
+
+[node name="Tranquillizer" type="AkEvent2D" parent="DartPoint" unique_id=1745127805]
+event = ExtResource("4_8fjmc")
+scale = Vector2(1.0000001, 1.0000001)
 
 [node name="Footstep" type="AkEvent2D" parent="." unique_id=1374440295]
 event = ExtResource("3_bls4j")

@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cq7n4wstscr01" path="res://UI/start_screen.gd" id="1_start"]
 [ext_resource type="Texture2D" uid="uid://c3v4b0rfflkge" path="res://Assets/Art/keyart.png" id="2_keyart"]
+[ext_resource type="WwiseBank" uid="uid://bkestvr0rq8bk" path="res://Wwise/resources/SoundBank/{2A20D06E-CCD5-43BD-807E-9D3D62AED106}.tres" id="3_ihv8h"]
+[ext_resource type="WwiseEvent" uid="uid://blq1de3ge8pfa" path="res://Wwise/resources/Event/{0A45503A-1FB9-4661-A4B6-8EF5E78F111D}.tres" id="4_0mikm"]
 
 [node name="StartScreen" type="Control" unique_id=1847263911]
 layout_mode = 3
@@ -11,6 +13,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_start")
+
+[node name="AkBank" type="AkBank" parent="." unique_id=1431795222]
+bank = ExtResource("3_ihv8h")
+load_on = 1
+unload_on = 3
+
+[node name="AkListener2D" type="AkListener2D" parent="." unique_id=1776135815]
+
+[node name="Title_Music" type="AkEvent2D" parent="." unique_id=858495298]
+
+[node name="UI_Click" type="AkEvent2D" parent="." unique_id=281117813]
+event = ExtResource("4_0mikm")
 
 [node name="Background" type="ColorRect" parent="." unique_id=1847263912]
 layout_mode = 1
@@ -23,6 +37,7 @@ mouse_filter = 2
 color = Color(0.05, 0.05, 0.06, 1)
 
 [node name="KeyArt" type="TextureRect" parent="." unique_id=1847263913]
+texture_filter = 2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -33,7 +48,6 @@ mouse_filter = 2
 texture = ExtResource("2_keyart")
 expand_mode = 1
 stretch_mode = 6
-texture_filter = 2
 
 [node name="BeginButton" type="Button" parent="." unique_id=1847263914]
 custom_minimum_size = Vector2(280, 64)
@@ -48,4 +62,5 @@ offset_top = -120.0
 offset_right = 140.0
 offset_bottom = -48.0
 grow_horizontal = 2
+grow_vertical = 0
 text = "Begin Game"

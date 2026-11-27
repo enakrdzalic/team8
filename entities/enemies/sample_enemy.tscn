@@ -13,6 +13,7 @@
 [ext_resource type="WwiseEvent" uid="uid://le5bqke3fqvg" path="res://Wwise/resources/Event/{D0C2DD4E-325C-41A8-AAB4-45AE827CDF54}.tres" id="10_00f8x"]
 [ext_resource type="Script" uid="uid://bibclxrms6wj7" path="res://entities/state/enemy_sleep.gd" id="10_240a1"]
 [ext_resource type="WwiseEvent" uid="uid://betj4wim6gmpy" path="res://Wwise/resources/Event/{31C1EEEB-BA7F-4BEA-B81B-A94D82686B33}.tres" id="11_ayli3"]
+[ext_resource type="WwiseEvent" uid="uid://bwt4kef65d88k" path="res://Wwise/resources/Event/{C88C9D0B-5880-4E5A-AF57-77F68EFDB2D5}.tres" id="11_nn0vg"]
 [ext_resource type="WwiseEvent" uid="uid://clkc20yxsjnh1" path="res://Wwise/resources/Event/{CAFDFB58-2079-4CAD-A416-B8A1BCCB3C91}.tres" id="12_ayli3"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_npqr3"]
@@ -249,7 +250,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_fa8nk"]
 resource_name = "hit"
-length = 0.2
+length = 0.3
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -373,11 +374,13 @@ event = ExtResource("9_fa8nk")
 event = ExtResource("11_ayli3")
 
 [node name="Monster_Sleep" type="AkEvent2D" parent="." unique_id=966605673]
+event = ExtResource("11_nn0vg")
 
 [node name="Monster_Dragging" type="AkEvent2D" parent="." unique_id=1971750477]
 event = ExtResource("12_ayli3")
 
 [node name="HitFlashAnime" type="AnimationPlayer" parent="." unique_id=1114608078]
+callback_mode_method = 1
 libraries/ = SubResource("AnimationLibrary_240a1")
 
 [connection signal="body_entered" from="AttackHitbox" to="StateMachine/EnemyAttack" method="_on_attack_hitbox_body_entered"]
