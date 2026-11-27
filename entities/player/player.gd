@@ -168,8 +168,6 @@ func release() -> void:
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if is_attacking and body.is_in_group("Enemy"):
 		print(body.name + " hit")
-		if body.has_node("Monster_Damage"):
-			body.get_node("Monster_Damage").post_event()
 		body.take_damage(weapon_damage)
 
 func take_damage(damage: int) -> void:

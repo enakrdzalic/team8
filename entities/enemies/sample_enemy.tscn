@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b0k3uqxab0lvm" path="res://entities/enemies/enemy.gd" id="1_mdlp7"]
 [ext_resource type="Shader" uid="uid://d1j1111ga27ii" path="res://Material/hit_flash.gdshader" id="2_fa8nk"]
-[ext_resource type="Texture2D" uid="uid://bxgc0q4n0ncbn" path="res://assets/placeholders/enemies/Blood Monster_A.png" id="2_jfsri"]
+[ext_resource type="Texture2D" uid="uid://bisetcxit2s6v" path="res://assets/placeholders/enemies/Blood Monster_A.png" id="2_jfsri"]
 [ext_resource type="Script" uid="uid://c2uffy15s0c41" path="res://entities/state/state_machine.gd" id="3_jfsri"]
 [ext_resource type="Script" uid="uid://d5b8x6kdmpo8" path="res://entities/state/enemy_idle.gd" id="4_snhs7"]
 [ext_resource type="Script" uid="uid://cbh7gkiirpga5" path="res://entities/state/enemy_chase.gd" id="5_jfsri"]
@@ -11,9 +11,9 @@
 [ext_resource type="Script" uid="uid://8crtgu8jyn5r" path="res://entities/state/enemy_patrol.gd" id="8_g6jqv"]
 [ext_resource type="WwiseEvent" uid="uid://bo6d0ddtnrt1r" path="res://Wwise/resources/Event/{8F58D8EB-0C92-44DF-8F28-23D699631862}.tres" id="9_fa8nk"]
 [ext_resource type="WwiseEvent" uid="uid://le5bqke3fqvg" path="res://Wwise/resources/Event/{D0C2DD4E-325C-41A8-AAB4-45AE827CDF54}.tres" id="10_00f8x"]
+[ext_resource type="Script" uid="uid://bibclxrms6wj7" path="res://entities/state/enemy_sleep.gd" id="10_240a1"]
 [ext_resource type="WwiseEvent" uid="uid://betj4wim6gmpy" path="res://Wwise/resources/Event/{31C1EEEB-BA7F-4BEA-B81B-A94D82686B33}.tres" id="11_ayli3"]
 [ext_resource type="WwiseEvent" uid="uid://clkc20yxsjnh1" path="res://Wwise/resources/Event/{CAFDFB58-2079-4CAD-A416-B8A1BCCB3C91}.tres" id="12_ayli3"]
-[ext_resource type="Script" uid="uid://bibclxrms6wj7" path="res://entities/state/enemy_sleep.gd" id="10_240a1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_npqr3"]
 resource_local_to_scene = true
@@ -263,6 +263,20 @@ tracks/0/keys = {
 "update": 1,
 "values": [true, false]
 }
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Monster_Damage")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"post_event"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_240a1"]
 _data = {
@@ -279,7 +293,7 @@ script = ExtResource("1_mdlp7")
 texture_filter = 1
 material = SubResource("ShaderMaterial_npqr3")
 sprite_frames = SubResource("SpriteFrames_xji4p")
-animation = &"enemy_idle"
+animation = &"enemy_attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1813359488]
 position = Vector2(1.9999994, -0.33333206)
@@ -349,11 +363,11 @@ top_level = true
 
 [node name="PointB" type="Marker2D" parent="PatrolPoints" unique_id=1244206325]
 
-[node name="Monster_Damage" type="AkEvent2D" parent="." unique_id=1560557653]
-event = ExtResource("9_fa8nk")
-
 [node name="Monster_Dying" type="AkEvent2D" parent="." unique_id=833108219]
 event = ExtResource("10_00f8x")
+
+[node name="Monster_Damage" type="AkEvent2D" parent="." unique_id=1560557653]
+event = ExtResource("9_fa8nk")
 
 [node name="Monster_ShortAttack" type="AkEvent2D" parent="." unique_id=2142922400]
 event = ExtResource("11_ayli3")
@@ -362,6 +376,7 @@ event = ExtResource("11_ayli3")
 
 [node name="Monster_Dragging" type="AkEvent2D" parent="." unique_id=1971750477]
 event = ExtResource("12_ayli3")
+
 [node name="HitFlashAnime" type="AnimationPlayer" parent="." unique_id=1114608078]
 libraries/ = SubResource("AnimationLibrary_240a1")
 

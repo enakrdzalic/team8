@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxgc0q4n0ncbn"
-path="res://.godot/imported/Blood Monster_A.png-a1bb6823adfdb400de1711e43f8a5139.ctex"
+path="res://.godot/imported/Blood Monster_A.png-df1f1b0aca85386d881b53653f547fbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeholders/enemies/Blood Monster_A.png"
-dest_files=["res://.godot/imported/Blood Monster_A.png-a1bb6823adfdb400de1711e43f8a5139.ctex"]
+source_file="res://Assets/placeholders/enemies/Blood Monster_A.png"
+dest_files=["res://.godot/imported/Blood Monster_A.png-df1f1b0aca85386d881b53653f547fbd.ctex"]
 
 [params]
 

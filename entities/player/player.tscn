@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://cfmhek0hfjner"]
 
 [ext_resource type="Script" uid="uid://br1i8xxy426vc" path="res://entities/player/player.gd" id="1_sglur"]
-[ext_resource type="Texture2D" uid="uid://5t1yq4kisfb5" path="res://Assets/placeholders/player/Player.png" id="2_abrql"]
-[ext_resource type="WwiseEvent" uid="uid://d4fmxg1huai32" path="res://Wwise/resources/Event/{92747C86-C481-4B22-A986-B340C1F36FBA}.tres" id="3_bls4j"]
-[ext_resource type="WwiseEvent" uid="uid://bakidqpkpn8ah" path="res://Wwise/resources/Event/{2F14897B-45E4-4DC2-A861-68659BF21D7D}.tres" id="4_fkugw"]
 [ext_resource type="PackedScene" uid="uid://bp6gg2237o35r" path="res://entities/player/Dart.tscn" id="2_sglur"]
-[ext_resource type="Texture2D" uid="uid://dakbd7by16bjr" path="res://assets/art/player/spritesheet.png" id="3_sglur"]
+[ext_resource type="WwiseEvent" uid="uid://d4fmxg1huai32" path="res://Wwise/resources/Event/{92747C86-C481-4B22-A986-B340C1F36FBA}.tres" id="3_bls4j"]
+[ext_resource type="Texture2D" uid="uid://dakbd7by16bjr" path="res://Assets/Art/player/spritesheet.png" id="3_sglur"]
+[ext_resource type="WwiseEvent" uid="uid://bakidqpkpn8ah" path="res://Wwise/resources/Event/{2F14897B-45E4-4DC2-A861-68659BF21D7D}.tres" id="4_fkugw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bls4j"]
 atlas = ExtResource("3_sglur")
@@ -595,7 +594,6 @@ disabled = true
 [node name="Camera2D" type="Camera2D" parent="." unique_id=642997054]
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
-position_smoothing_speed = 5.0
 
 [node name="DartPoint" type="Marker2D" parent="." unique_id=327287197]
 
