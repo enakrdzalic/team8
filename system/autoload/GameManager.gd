@@ -7,10 +7,10 @@ enum GameState {
     GAME_OVER
 }
 
-signal state_changed(new_state: GameState)
-
 const KILL_REWARD := 10
 const DRAG_REWARD := 50
+
+signal state_changed(new_state: GameState)
 
 var current_state: GameState = GameState.MAIN_MENU
 var fade_from_black := false
