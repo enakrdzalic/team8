@@ -1,0 +1,50 @@
+Event	ID	Name			Wwise Object Path	Notes
+	396585373	Play_HeavyAttack_Main			\Default Work Unit\Heavy Attack\Play_HeavyAttack_Main	
+	1262687212	Play_Footstep_Main			\Default Work Unit\Footsteps\Play_Footstep_Main	
+	1327240191	Play_MD_Main			\Default Work Unit\Monster\Play_MD_Main	
+	1871703286	Play_Amb_Main			\Default Work Unit\Ambience\Play_Amb_Main	
+	1978162964	Play_MDamage_Main			\Default Work Unit\Monster Damage\Play_MDamage_Main	
+	2025845440	Play_Torch			\Default Work Unit\Torch\Play_Torch	
+	3609265728	Play_MA_Main			\Default Work Unit\Monster\Play_MA_Main	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2835351336	Groundtype			\Default Work Unit\Groundtype	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Groundtype			
+	4248645337	Grass	Groundtype			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	27727235	Monster_Taking Damage_SFX_06	.cache\E4\{E4981ABD-79D1-26FC-E546-ED604067C21F}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_06		23174
+	45974855	Footstep_ Concrete_04	.cache\34\{3430170B-3FF8-777F-7241-DA97309FC8E7}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete\Footstep_ Concrete_04		16502
+	74198814	Footstep_ Concrete_01	.cache\47\{47B4959A-C60A-0184-3F87-E02502AEAADA}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete\Footstep_ Concrete_01		25650
+	123993244	Heavy Swing Attack_SFX_05	.cache\79\{79D52A1A-B85F-9F05-66CC-9015C60C512D}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_05		27788
+	196794876	Monster_Dying_01	.cache\2F\{2F5D5C0B-C574-0284-C70A-12828E034245}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_01		150636
+	237436056	Heavy Swing Attack_SFX_04	.cache\21\{21B392C8-AEFF-7196-F757-C4FEC04BEA55}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_04		30868
+	248804481	Torch_SFX_02	.cache\52\{52A956A7-EA3B-25D4-EA3B-A8E9EC2D4450}.wem		\Containers\Default Work Unit\SFX\SFX\Torch\Torch_SFX\Torch_SFX_02		104710
+	250376658	Torch_SFX_01	.cache\55\{5524E488-C8A1-1366-935A-0256467B32D2}.wem		\Containers\Default Work Unit\SFX\SFX\Torch\Torch_SFX\Torch_SFX_01		92404
+	254935506	Heavy Swing Attack_SFX_02	.cache\0D\{0D263821-3C39-4D13-0145-B1AFF397A53F}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_02		40096
+	259190848	Monster Short Attack_SFX_05	.cache\55\{55D11DA9-1479-09A3-5FCE-67C0D4D32D09}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_05		246248
+	307879855	Heavy Swing Attack_SFX_06	.cache\A3\{A32E5A3F-B2EE-3329-2C89-B81070F08330}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_06		24712
+	314941114	Monster_Taking Damage_SFX_08	.cache\F4\{F40E0522-9004-487F-3D9C-D3A3C3B946AD}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_08		27788
+	331792790	Monster_Taking Damage_SFX_05	.cache\7F\{7FD08131-70FE-C3BF-732F-B2A43DE513CF}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_05		12404
+	378194109	BG_Night_01	.cache\33\{338083DB-4F65-0A9F-C085-46C8C169F147}.wem		\Containers\Default Work Unit\SFX\BG\BG(ambience)\BG_Night_01		34687308
+	378802375	Monster Short Attack_SFX_02	.cache\A1\{A1ED643C-63E9-61EF-F04C-0CE6EB74FCFA}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_02		147788
+	383302279	Footstep_ Concrete_03	.cache\64\{640975E8-5C61-6E68-7C97-4919790DA6BB}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete\Footstep_ Concrete_03		14134
+	389350283	Monster_Dying_02	.cache\DA\{DA61E930-2955-6B9F-E3B5-ABC694C42DA3}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_02		150636
+	428612936	Monster_Taking Damage_SFX_02	.cache\03\{03888EA8-CF1A-6B4A-DA9C-2B11BC97DDEB}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_02		37020
+	471139807	Monster_Taking Damage_SFX_03	.cache\21\{21ACA9E9-02D9-EF2F-BCA7-57A36553A99D}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_03		33942
+	518232680	Footstep_ Concrete_02	.cache\21\{21D17D74-966C-1277-5074-9501A6842EB3}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete\Footstep_ Concrete_02		20070
+	545319319	Torch_SFX_03	.cache\BA\{BA64712F-D65A-E6F7-6808-D0CDE0126F75}.wem		\Containers\Default Work Unit\SFX\SFX\Torch\Torch_SFX\Torch_SFX_03		84680
+	561361336	Monster_Dying_03	.cache\0B\{0BA3460C-00ED-4C52-13F1-D6065E0AA820}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_03		139056
+	595690244	Monster_Taking Damage_SFX_04	.cache\55\{55846FC0-4FBB-3C2A-65AC-36BA2FE6EA4C}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_04		30866
+	672200095	Monster Short Attack_SFX_04	.cache\89\{897DE346-EC9F-372D-71CB-6568802C482B}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_04		170004
+	732751470	Heavy Swing Attack_SFX_01	.cache\CB\{CB5BC260-88E5-8210-6112-4E2539450437}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_01		37020
+	746145737	Monster_Taking Damage_SFX_01	.cache\C5\{C5D9F3E9-0DB7-B3D8-3A98-B0BA98F7C796}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_01		37020
+	771801313	Monster_Taking Damage_SFX_07	.cache\C7\{C7557DC7-5A24-8FB2-BD1E-13E814133D08}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_07		30866
+	777475319	Monster_Dying_04	.cache\C0\{C02E209C-5710-2538-A45D-68DD856C8117}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_04		139056
+	832371534	Monster Short Attack_SFX_03	.cache\00\{00AEDCD0-6D40-FE1A-C793-26770ACD9FB5}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_03		295476
+	891077320	Monster Short Attack_SFX_07	.cache\67\{672EB00E-1A09-31F3-69C5-DF9BA9188F29}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_07		172404
+	936935450	Monster Short Attack_SFX_01	.cache\E8\{E8F96234-8863-AD6F-B9CE-5D650BB636BD}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_01		197016
+	1017989562	Heavy Swing Attack_SFX_03	.cache\7F\{7FD9168E-5AC3-5306-E1F0-2EDCAD74C8CF}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_03		27788
+

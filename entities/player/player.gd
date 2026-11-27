@@ -18,6 +18,7 @@ var hitbox_offset : Vector2
 var dragged_body: Node2D = null
 var dragged_body_parent: Node = null
 var drag_axis := Vector2.ZERO
+var drag_sound_playing := false
 
 @onready var zone_camera := get_node_or_null("../ZoneCamera") as ZoneCamera
 @onready var zone_camera_zoom = zone_camera.zoom
@@ -26,6 +27,7 @@ var drag_axis := Vector2.ZERO
 
 func _ready() -> void:
 	hitbox_offset = $AttackHitbox.position
+	$AnimatedSprite2D.frame_changed.connect(_on_frame_changed)
 
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("attack") and not is_attacking:
@@ -74,7 +76,12 @@ func process_movement() -> void:
 		update_hitbox_offset()
 	else:
 		velocity = Vector2.ZERO
-
+	var moving_body := is_instance_valid(dragged_body) and velocity != Vector2.ZERO
+	if moving_body and not drag_sound_playing:
+		dragged_body.get_node("Monster_Dragging").post_event()
+		drag_sound_playing = true
+	elif not moving_body and drag_sound_playing:
+		stop_drag_sound()
 func process_animation() -> void:
 	if is_attacking:
 		return
@@ -98,6 +105,7 @@ func play_animation(prefix: String, dir: Vector2) -> void:
 ## Handling Attacking ##
 
 func attack() -> void:
+	$HeavyAttack.post_event()
 	is_attacking = true
 	$AttackHitbox/CollisionShape2D.set_deferred("disabled", false)
 	play_animation("attack", last_direction)
@@ -138,6 +146,7 @@ func drag() -> void:
 	# play_animation("drag", last_direction)
 
 func release() -> void:
+	stop_drag_sound()
 	$DragHitbox/CollisionShape2D.set_deferred("disabled", true)
 	if is_instance_valid(dragged_body):
 		if not is_instance_valid(dragged_body_parent):
@@ -155,6 +164,18 @@ func release() -> void:
 		tween.tween_property(zone_camera, "zoom", zone_camera_zoom, 0.1)
 
 	# play_animation("release", last_direction)
+
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	if is_attacking and body.is_in_group("Enemy"):
+		print(body.name + " hit")
+		if body.has_node("Monster_Damage"):
+			body.get_node("Monster_Damage").post_event()
+		body.take_damage(weapon_damage)
+
+func take_damage(damage: int) -> void:
+	# health = maxi(0, health - damage)
+	print("hitted")
+
 
 func _on_drag_hitbox_body_entered(body: Node2D) -> void:
 	if not is_dragging or is_instance_valid(dragged_body) or body == self:
@@ -184,7 +205,17 @@ func _drag_body(body: Node2D) -> void:
 		add_collision_exception_with(body)
 		body.add_collision_exception_with(self)
 	body.reparent(self, true)
+	
 	print(body.name + " dragged")
+func _on_frame_changed():
+	if String($AnimatedSprite2D.animation).begins_with("run_"):
+		if $AnimatedSprite2D.frame == 2 or $AnimatedSprite2D.frame == 5:
+			$Footstep.post_event()
+			
+func stop_drag_sound() -> void:
+	if drag_sound_playing and is_instance_valid(dragged_body):
+		dragged_body.get_node("Monster_Dragging").stop_event()
+	drag_sound_playing = false
 
 
 ## Handling Damage ## 

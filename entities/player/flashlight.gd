@@ -1,5 +1,12 @@
 extends PointLight2D
 
+# Beam points along +X, then rotates to the player's last facing.
+const BEAM_HALF_ANGLE := 0.52
+const BEAM_REACH := 120.0
+const GLOW_RADIUS := 36.0
+
+var glow_enabled := false
+var was_enabled := false
 # Lantern cone along +X. Distances are in character-heights (the sprite is 1 tall).
 # The body sits inside the back of the beam, the same way the reference lantern
 # wraps the character, and the bright pool is the stretch of ground in front.
@@ -20,6 +27,10 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
+	if enabled and not was_enabled:
+		$Torch_SFX.post_event()
+		print("TORCH ON")
+	was_enabled = enabled
 	var body := get_parent() as CharacterBody2D
 	if body == null:
 		return

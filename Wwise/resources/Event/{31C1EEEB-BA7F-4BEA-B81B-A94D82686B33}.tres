@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://betj4wim6gmpy"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_MA_Main"
+id = 3609265728
+guid = "{31C1EEEB-BA7F-4BEA-B81B-A94D82686B33}"
+dummy = true
