@@ -248,11 +248,8 @@ guid = "{9844AF66-C830-450F-86AF-60EB3A6BF624}"
 id = 1599183472
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_0hqp2"]
-path = "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX"
 children = [SubResource("WwiseTreeObject_0g3k4"), SubResource("WwiseTreeObject_5ppdk"), SubResource("WwiseTreeObject_l65hi"), SubResource("WwiseTreeObject_63ewg"), SubResource("WwiseTreeObject_myib7"), SubResource("WwiseTreeObject_gv40o")]
-type = 2
 name = "SFX"
-guid = "{E23ACF8A-C5A4-4085-9D98-63162E87A5DC}"
 id = 393239870
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_h61g6"]

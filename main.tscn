@@ -10,10 +10,29 @@
 [ext_resource type="Script" uid="uid://du68dvp5ugv2c" path="res://entities/player/flashlight.gd" id="5_flash"]
 [ext_resource type="WwiseEvent" uid="uid://jyblkuu5vjfy" path="res://Wwise/resources/Event/{54FA3A98-D0E1-49C8-8BE7-2B59C04E515E}.tres" id="6_kek77"]
 [ext_resource type="Script" uid="uid://bl7qfwxtdrm5y" path="res://UI/night_mode.gd" id="6_night"]
-[ext_resource type="Texture2D" uid="uid://df5j57iwlgk66" path="res://Assets/Art/city_map.png" id="7_city"]
+[ext_resource type="Texture2D" uid="uid://bbh2vjepemd0w" path="res://Assets/Art/city_map.png" id="7_city"]
 [ext_resource type="Script" uid="uid://dur3xre0b0h23" path="res://maps/city_collision.gd" id="8_blocks"]
 [ext_resource type="Script" uid="uid://b7n3fadeblack" path="res://UI/fade_in.gd" id="9_fade"]
-[ext_resource type="PackedScene" path="res://UI/night_hud.tscn" id="10_hud"]
+[ext_resource type="PackedScene" uid="uid://dpo7yr3c5nd8a" path="res://UI/night_hud.tscn" id="10_hud"]
+[ext_resource type="Shader" uid="uid://d1j1111ga27ii" path="res://Material/hit_flash.gdshader" id="12_vivmo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2cqfq"]
+resource_local_to_scene = true
+shader = ExtResource("12_vivmo")
+shader_parameter/hit_flash_color = Color(1, 1, 1, 1)
+shader_parameter/hit_flash_on = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yaehf"]
+resource_local_to_scene = true
+shader = ExtResource("12_vivmo")
+shader_parameter/hit_flash_color = Color(1, 1, 1, 1)
+shader_parameter/hit_flash_on = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_074og"]
+resource_local_to_scene = true
+shader = ExtResource("12_vivmo")
+shader_parameter/hit_flash_color = Color(1, 1, 1, 1)
+shader_parameter/hit_flash_on = false
 
 [node name="Main" type="Node2D" unique_id=1912012056]
 y_sort_enabled = true
@@ -67,6 +86,9 @@ script = ExtResource("4_zones")
 [node name="SampleEnemy" parent="." unique_id=1827295212 instance=ExtResource("2_0xm2m")]
 position = Vector2(1417.715, 2410)
 
+[node name="AnimatedSprite2D" parent="SampleEnemy" index="0" unique_id=542169778]
+material = SubResource("ShaderMaterial_2cqfq")
+
 [node name="PointA" parent="SampleEnemy/PatrolPoints" parent_id_path=PackedInt32Array(1827295212, 1599839405) index="0" unique_id=1025544620]
 position = Vector2(1417.715, 2410)
 
@@ -91,6 +113,9 @@ text = "Flashlight"
 [node name="SampleEnemy2" parent="." unique_id=2009158671 instance=ExtResource("2_0xm2m")]
 position = Vector2(1953, 2200)
 
+[node name="AnimatedSprite2D" parent="SampleEnemy2" index="0" unique_id=542169778]
+material = SubResource("ShaderMaterial_yaehf")
+
 [node name="PatrolPoints" parent="SampleEnemy2" index="5" unique_id=1599839405]
 position = Vector2(1953, 2200)
 
@@ -100,13 +125,16 @@ position = Vector2(712, -2)
 [node name="SampleEnemy3" parent="." unique_id=11738878 instance=ExtResource("2_0xm2m")]
 position = Vector2(2600, 2430.395)
 
+[node name="AnimatedSprite2D" parent="SampleEnemy3" index="0" unique_id=542169778]
+material = SubResource("ShaderMaterial_074og")
+
 [node name="PatrolPoints" parent="SampleEnemy3" index="5" unique_id=1599839405]
 position = Vector2(2600, 2430.395)
 
 [node name="PointB" parent="SampleEnemy3/PatrolPoints" index="1" unique_id=1244206325]
 position = Vector2(-650, 0)
 
-[node name="NightHud" parent="." instance=ExtResource("10_hud")]
+[node name="NightHud" parent="." unique_id=1712135717 instance=ExtResource("10_hud")]
 
 [node name="FadeIn" type="CanvasLayer" parent="." unique_id=884726410]
 layer = 128

@@ -1150,7 +1150,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{AF8B247C-053A-54D0-12D5-138B010894C6}",
+    "Hash": "{00C20E35-8AA3-8C65-3BAD-7AC4498D0A2C}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1287,14 +1287,7 @@
       "Name": "Torch",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Torch",
       "GUID": "{548F1B31-17C9-4BB7-9C63-B0CA2935661B}",
-      "Color": "4",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "2141574376"
-        }
-       ]
-      }
+      "Color": "4"
      },
      {
       "Id": "1932095129",
@@ -1985,6 +1978,6 @@
     ]
    }
   ],
-  "FileHash": "{335926D6-F647-DA26-DFF2-B8F57B5434FC}"
+  "FileHash": "{C0F3FCD7-9793-03F8-B726-4A2496B21362}"
  }
 }
