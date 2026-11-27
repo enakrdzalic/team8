@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cfmhek0hfjner"]
 
 [ext_resource type="Script" uid="uid://br1i8xxy426vc" path="res://entities/player/player.gd" id="1_sglur"]
-[ext_resource type="Texture2D" uid="uid://5t1yq4kisfb5" path="res://Assets/placeholders/player/Player.png" id="2_abrql"]
+[ext_resource type="Texture2D" uid="uid://5t1yq4kisfb5" path="res://assets/placeholders/player/Player.png" id="2_abrql"]
+[ext_resource type="PackedScene" uid="uid://bp6gg2237o35r" path="res://entities/player/Dart.tscn" id="2_sglur"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_abrql"]
 atlas = ExtResource("2_abrql")
@@ -404,6 +405,7 @@ script = ExtResource("1_sglur")
 SPEED = 150.0
 move_factor = 2.5
 camera_zoom_factor = 1.5
+Dart = ExtResource("2_sglur")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1911459571]
 texture_filter = 1
@@ -437,6 +439,9 @@ disabled = true
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 position_smoothing_speed = 5.0
+
+[node name="DartPoint" type="Marker2D" parent="." unique_id=327287197]
+position = Vector2(4, 0)
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="AttackHitbox" to="." method="_on_hitbox_body_entered"]

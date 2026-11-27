@@ -10,6 +10,11 @@ const ARRIVAL_DISTANCE := 1.0
 
 func enter() -> void:
 	enemy.velocity = Vector2.ZERO
+	if enemy.pursuit_zone != -1:
+		enemy.pursuit_zone = -1
+		if is_instance_valid(spawn_point):
+			enemy.global_position = spawn_point.global_position
+			enemy.reset_physics_interpolation()
 	var sprite := enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
 	sprite.play(&"enemy_idle")
 
@@ -18,15 +23,18 @@ func physicsUpdate(delta: float) -> void:
 		Transitioned.emit(self, "EnemyDie")
 		return
 
-	if not is_instance_valid(spawn_point):
-		Transitioned.emit(self, "EnemyPatrol")
-		return
+	if is_instance_valid(spawn_point):
+		var offset := spawn_point.global_position - enemy.global_position
+		if offset.length_squared() > ARRIVAL_DISTANCE * ARRIVAL_DISTANCE:
+			# Enemy applies velocity in its own physics callback.
+			enemy.velocity = (offset / delta).limit_length(move_speed)
+			return
 
-	var offset := spawn_point.global_position - enemy.global_position
-	if offset.length_squared() <= ARRIVAL_DISTANCE * ARRIVAL_DISTANCE:
+	if not enemy.velocity.is_zero_approx():
 		enemy.velocity = Vector2.ZERO
-		Transitioned.emit(self, "EnemyPatrol")
-		return
+		var sprite := enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
+		sprite.play(&"enemy_idle")
 
-	# Enemy applies velocity in its own physics callback.
-	enemy.velocity = (offset / delta).limit_length(move_speed)
+	var player := get_tree().get_first_node_in_group(&"Player") as Node2D
+	if enemy.can_target_player(player):
+		Transitioned.emit(self, "EnemyPatrol")
