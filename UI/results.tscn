@@ -1,8 +1,14 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://bb5qqm61e5p4k"]
 
-[ext_resource type="Script" path="res://UI/results.gd" id="1_results"]
+[ext_resource type="Script" uid="uid://jugwhxjfg4d7" path="res://UI/results.gd" id="1_results"]
+[ext_resource type="WwiseBank" uid="uid://bkestvr0rq8bk" path="res://Wwise/resources/SoundBank/{2A20D06E-CCD5-43BD-807E-9D3D62AED106}.tres" id="2_6lrvt"]
+[ext_resource type="WwiseEvent" uid="uid://bxo05pxmgfcum" path="res://Wwise/resources/Event/{A3E8C926-611F-4890-BFA9-FF6CCC007383}.tres" id="3_1bm8j"]
+[ext_resource type="WwiseEvent" uid="uid://cnww65fn13r57" path="res://Wwise/resources/Event/{9FE2468B-89EB-432A-AE89-F77F319CE2C7}.tres" id="4_7fh73"]
+[ext_resource type="WwiseEvent" uid="uid://blq1de3ge8pfa" path="res://Wwise/resources/Event/{0A45503A-1FB9-4661-A4B6-8EF5E78F111D}.tres" id="5_51b7j"]
+[ext_resource type="WwiseEvent" uid="uid://v5lgpe4yf666" path="res://Wwise/resources/Event/{31708745-AFB8-45B8-AA29-E18C069DD0A8}.tres" id="6_7fh73"]
+[ext_resource type="WwiseEvent" uid="uid://dr3qkb2l8nnde" path="res://Wwise/resources/Event/{743F443E-F958-4478-8343-15E2E43363E2}.tres" id="7_51b7j"]
 
-[node name="Results" type="Control"]
+[node name="Results" type="Control" unique_id=554913785]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +17,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_results")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="AkBank" type="AkBank" parent="." unique_id=528533299]
+bank = ExtResource("2_6lrvt")
+load_on = 1
+unload_on = 3
+
+[node name="AkListener2D" type="AkListener2D" parent="." unique_id=714094480]
+
+[node name="Intro_Music" type="AkEvent2D" parent="." unique_id=522584134]
+event = ExtResource("3_1bm8j")
+trigger_on = 1
+stop_on = 3
+
+[node name="UI_Typing" type="AkEvent2D" parent="." unique_id=1247349961]
+event = ExtResource("4_7fh73")
+
+[node name="UI_Click" type="AkEvent2D" parent="." unique_id=1913931692]
+event = ExtResource("5_51b7j")
+
+[node name="Background" type="ColorRect" parent="." unique_id=2033335470]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,7 +45,8 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Report" type="Label" parent="."]
+[node name="Report" type="Label" parent="." unique_id=1014652199]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,18 +57,19 @@ offset_right = -160.0
 offset_bottom = -240.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 theme_override_colors/font_color = Color(0.96, 0.94, 0.88, 1)
 theme_override_constants/line_spacing = 18
 theme_override_font_sizes/font_size = 32
 text = "Night complete"
-horizontal_alignment = 0
-vertical_alignment = 0
 autowrap_mode = 3
-texture_filter = 1
 
-[node name="NextButton" type="Button" parent="."]
-visible = false
+[node name="Coin" type="AkEvent2D" parent="." unique_id=258527622]
+event = ExtResource("6_7fh73")
+
+[node name="Cash_Register" type="AkEvent2D" parent="." unique_id=100089217]
+event = ExtResource("7_51b7j")
+
+[node name="NextButton" type="Button" parent="." unique_id=1221963051]
 custom_minimum_size = Vector2(320, 72)
 layout_mode = 1
 anchors_preset = 7
@@ -56,4 +82,5 @@ offset_top = -148.0
 offset_right = 160.0
 offset_bottom = -68.0
 grow_horizontal = 2
+grow_vertical = 0
 text = "Next night."

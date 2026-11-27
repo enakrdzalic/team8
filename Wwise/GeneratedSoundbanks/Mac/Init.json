@@ -10,12 +10,20 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{4AB8E596-CBC7-9643-340D-5957073542BB}",
+    "Hash": "{00C20E35-8AA3-8C65-3BAD-7AC4498D0A2C}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
      "Custom": [
+      {
+       "Id": "584108288",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\Combat_Music\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{0A2C8829-2B23-4C9A-A65B-370D220BB84D}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
       {
        "Id": "596671754",
        "Name": "Hall_Large_Dark (Custom)",
@@ -23,6 +31,22 @@
        "GUID": "{4955D6DC-7330-4F0F-9D87-1196D963D4FA}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
+      },
+      {
+       "Id": "801331279",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Coin\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{42E24619-8FDC-48F2-95F0-091AC5AB2125}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "914994510",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Character\\Footsteps\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{5623D4F0-6E63-4253-A883-1360726F0862}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
       }
      ],
      "ShareSets": [
@@ -55,12 +79,6 @@
      ]
     },
     "Busses": [
-     {
-      "Id": "85412153",
-      "Name": "Ambience",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambience",
-      "GUID": "{296CBFD1-E5C8-4B2B-A8FE-1058074D705D}"
-     },
      {
       "Id": "180661997",
       "Name": "Attack",
@@ -129,20 +147,27 @@
       "Name": "Torch",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Torch",
       "GUID": "{548F1B31-17C9-4BB7-9C63-B0CA2935661B}",
-      "Color": "4",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "2141574376"
-        }
-       ]
-      }
+      "Color": "4"
      },
      {
       "Id": "1932095129",
       "Name": "Combat_Music",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\Combat_Music",
       "GUID": "{D120DE6E-582F-438F-92D1-6D059D5BD108}",
+      "Color": "1",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "584108288"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2093333966",
+      "Name": "Intro_Ambinece",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\Intro_Ambinece",
+      "GUID": "{CF5726ED-48D3-4F32-8043-F976149FFF1E}",
       "Color": "1"
      },
      {
@@ -165,9 +190,9 @@
       "GUID": "{1896932F-41D5-40A3-B914-5E1EC804060A}",
       "Color": "11",
       "PluginRefs": {
-       "ShareSets": [
+       "Custom": [
         {
-         "Id": "2141574376"
+         "Id": "914994510"
         }
        ]
       }
@@ -196,6 +221,20 @@
        "ShareSets": [
         {
          "Id": "2141574376"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3603273110",
+      "Name": "Coin",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Coin",
+      "GUID": "{689D86E3-5ED2-4602-927F-AED77DC9BFCF}",
+      "Color": "4",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "801331279"
         }
        ]
       }
@@ -233,14 +272,7 @@
       "Name": "Music",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
       "GUID": "{C6D62AA5-F279-4DEC-A95B-A73152DB1AC1}",
-      "Color": "1",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "2141574376"
-        }
-       ]
-      }
+      "Color": "1"
      }
     ],
     "GameParameters": [
@@ -806,6 +838,6 @@
     ]
    }
   ],
-  "FileHash": "{BCAB8975-4038-AD04-F744-5CD4F741A0C8}"
+  "FileHash": "{3EE6647D-6037-AA3A-1567-8EEAD323081E}"
  }
 }

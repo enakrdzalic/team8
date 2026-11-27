@@ -1,16 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
+	176559217	Play_Typing_Main			\Default Work Unit\Typing\Play_Typing_Main	
 	396585373	Play_HeavyAttack_Main			\Default Work Unit\Heavy Attack\Play_HeavyAttack_Main	
 	970928956	Stop_Combat_Music			\Default Work Unit\Music\Stop_Combat_Music	
 	1164316878	Play_MS_Main			\Default Work Unit\Monster\Play_MS_Main	
 	1262687212	Play_Footstep_Main			\Default Work Unit\Footsteps\Play_Footstep_Main	
 	1327240191	Play_MD_Main			\Default Work Unit\Monster\Play_MD_Main	
+	1488234343	Intro_BG_Main			\Default Work Unit\Intro_BG\Intro_BG_Main	
 	1614763749	Play_Music_Main			\Default Work Unit\Music\Play_Music_Main	
+	1623423870	Play_Mouse_Click_Main			\Default Work Unit\Mouse Click\Play_Mouse_Click_Main	
 	1871703286	Play_Amb_Main			\Default Work Unit\Ambience\Play_Amb_Main	
 	1978162964	Play_MDamage_Main			\Default Work Unit\Monster Damage\Play_MDamage_Main	
 	2025845440	Play_Torch			\Default Work Unit\Torch\Play_Torch	
+	2197227248	Stop_Intro_BG			\Default Work Unit\Intro_BG\Stop_Intro_BG	
 	2526232351	Play_MDrag_Main			\Default Work Unit\Monster\Play_MDrag_Main	
+	2535968479	Play_Coin_Main			\Default Work Unit\Coin\Play_Coin_Main	
+	2921373780	Play_CoinMachine_Main			\Default Work Unit\Coin\Play_CoinMachine_Main	
 	3024457733	Play_Tranqillizer_Main			\Default Work Unit\Tranqillizer\Play_Tranqillizer_Main	
 	3609265728	Play_MA_Main			\Default Work Unit\Monster\Play_MA_Main	
+	3715660239	Play_CoinBag_Main			\Default Work Unit\Coin\Play_CoinBag_Main	
 	3981986209	Play_BG_Main			\Default Work Unit\BG\Play_BG_Main	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -20,28 +27,45 @@ Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Groundtype			
 	4248645337	Grass	Groundtype			
 
+Effect plug-ins	ID	Name	Type				Notes
+	69798558	Parametric_EQ (Custom)	Wwise Parametric EQ			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4276921	Owl_SFX_04	.cache\C7\{C7756A90-AD2E-3462-8102-4CCA6E4CB1C3}.wem		\Containers\Default Work Unit\SFX\BG\Owl\Owl_SFX\Owl_SFX_04		495474
 	18032275	Pink nosie_SFX_01	.cache\B6\{B6B4C242-DEC3-6861-6451-922F7383F624}.wem		\Containers\Default Work Unit\SFX\BG\BG\Pink nosie_SFX_01		11750500
 	19486188	tranquilizer_SFX_03	.cache\3C\{3CFF64AE-B32E-3B76-1054-B29A70F70D14}.wem		\Containers\Default Work Unit\SFX\SFX\Tranqillizer\Tranqillizer_SFX\tranquilizer_SFX_03		55480
 	27727235	Monster_Taking Damage_SFX_06	.cache\E4\{E4981ABD-79D1-26FC-E546-ED604067C21F}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_06		23174
 	31901788	Heavy Footsteps_Concrete_SFX_3	.cache\7C\{7C4E9A92-122D-C2CB-FBB1-9B76EA789D61}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_3		37020
+	86192214	Typing_SFX_08	.cache\16\{1614D498-50C8-AAC3-59FA-96EE46AB3523}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_08		15846
 	94170573	Insect_SFX_02	.cache\FC\{FCC967B7-50D1-4D83-FBAB-DA33C353DC92}.wem		\Containers\Default Work Unit\SFX\BG\Insect\Insect\Insect_SFX_02		601722
+	115704002	Typing_SFX_07	.cache\6A\{6A9CC0C2-4B0D-E61E-3BE0-1BA77197DF3C}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_07		36096
 	149486299	Ambince music 01	.cache\1A\{1A24336A-7844-2FC2-F34C-1E186F204CBF}.wem		\Containers\Default Work Unit\SFX\Music\Ambience music\Ambince music 01		29622956
 	150963477	Heavy Footsteps_Concrete_SFX_1	.cache\AD\{AD226BAF-46A7-F2D7-ED02-09B3CEEF5711}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_1		37020
+	158677212	Coin bag_SFX_04	.cache\7E\{7EAF261C-2C1B-0BC8-828E-405DDD800EB9}.wem		\Containers\Default Work Unit\SFX\SFX\Coin_Bag\Coin_Bag_Ram\Coin bag_SFX_04		120096
 	172710663	tranquilizer_SFX_04	.cache\10\{10487BAA-6227-FF3B-A90F-1C798C153169}.wem		\Containers\Default Work Unit\SFX\SFX\Tranqillizer\Tranqillizer_SFX\tranquilizer_SFX_04		63416
 	192096856	Heavy Monster_Sleeping_01	.cache\AD\{AD5DF088-A78B-B482-2FCB-5C02EDF9B803}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Sleep\Heavy Monster_Sleeping_01		1624686
 	196794876	Monster_Dying_01	.cache\2F\{2F5D5C0B-C574-0284-C70A-12828E034245}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_01		150636
+	202383047	Typing_SFX_01	.cache\AF\{AFDC4208-8551-CCC4-3B48-511BDE27AB56}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_01		16596
+	211012503	Typing_SFX_09	.cache\D2\{D2EEEA65-BBE5-9FBC-6352-822E70377A28}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_09		36096
+	220076888	Typing_SFX_12	.cache\9B\{9B83848A-40DB-C38A-FBF4-8773525FCA77}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_12		16596
 	243504755	Monster_Drag_02	.cache\8A\{8A1DDAB1-8E80-64AA-BF33-BF4D6E5747E5}.wem		\Containers\Default Work Unit\SFX\Character\Monster_Drag\Monster_Drag_02		295476
+	243556386	Typing_SFX_02	.cache\E0\{E0119C26-537F-EC10-4F70-1190BA159A7A}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_02		19596
 	248804481	Torch_SFX_02	.cache\ED\{ED6A4704-525C-E766-C4FF-8AAFB13836CB}.wem		\Containers\Default Work Unit\SFX\SFX\Torch\Torch_SFX\Torch_SFX_02		104758
 	250376658	Torch_SFX_01	.cache\0E\{0E6C2AA1-EBEA-4E73-2252-35EEA2E5CEB1}.wem		\Containers\Default Work Unit\SFX\SFX\Torch\Torch_SFX\Torch_SFX_01		92452
 	259190848	Monster Short Attack_SFX_05	.cache\55\{55D11DA9-1479-09A3-5FCE-67C0D4D32D09}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_05		246248
+	277333294	Typing_SFX_05	.cache\1B\{1BCB6E5A-550A-40E5-DF1E-B7BF5BEFC09B}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_05		13596
+	310536284	Typing_SFX_04	.cache\40\{400BEE07-4709-1A6C-B9E8-EE2150028DBE}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_04		15096
 	314941114	Monster_Taking Damage_SFX_08	.cache\F4\{F40E0522-9004-487F-3D9C-D3A3C3B946AD}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_08		27788
+	321148512	Typing_SFX_10	.cache\2A\{2A73AD28-AEA8-8DB6-D5E3-49975B065364}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_10		27096
 	331792790	Monster_Taking Damage_SFX_05	.cache\7F\{7FD08131-70FE-C3BF-732F-B2A43DE513CF}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_05		12404
+	333146565	Typing_SFX_03	.cache\11\{11859BF3-6358-C47F-720D-FD05E85EBD1D}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_03		24846
 	334316413	Heavy Swing Attack_SFX_04	.cache\C4\{C4B7BF31-348B-17DD-0A26-2888E5B179BD}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_04		30164
 	354167331	Combat_Music	.cache\22\{22C68FED-E817-26A5-0D92-6D6D77387875}.wem		\Containers\Default Work Unit\SFX\Music\Combat Music\Combat_Music		59436608
 	354602367	Insect_SFX_04	.cache\34\{34F86B16-BB30-7F8C-C86D-698521CAF954}.wem		\Containers\Default Work Unit\SFX\BG\Insect\Insect\Insect_SFX_04		1181616
+	356491074	Coin bag_SFX_03	.cache\4F\{4F22EDE9-2723-5F97-AE64-135ED1883EE4}.wem		\Containers\Default Work Unit\SFX\SFX\Coin_Bag\Coin_Bag_Ram\Coin bag_SFX_03		120096
 	356571215	Heavy Swing Attack_SFX_01	.cache\60\{60187730-4D40-15A0-7619-3A561B872D06}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_01		35814
+	366869268	Typing_SFX_14	.cache\56\{56FA4E5B-872A-2327-685E-7C9795F97B48}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_14		21096
+	376734161	Coin bag_SFX_01	.cache\71\{71F2DE24-35F6-C792-0481-4B0461D96C4C}.wem		\Containers\Default Work Unit\SFX\SFX\Coin_Bag\Coin_Bag_Ram\Coin bag_SFX_01		144096
 	378802375	Monster Short Attack_SFX_02	.cache\A1\{A1ED643C-63E9-61EF-F04C-0CE6EB74FCFA}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_02		147788
 	386318904	Heavy Swing Attack_SFX_06	.cache\D7\{D7FBDD3A-AB41-5E54-B643-4A2BE0C849AA}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_06		21310
 	389350283	Monster_Dying_02	.cache\DA\{DA61E930-2955-6B9F-E3B5-ABC694C42DA3}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_02		150636
@@ -52,20 +76,26 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	458323661	Heavy Footsteps_Concrete_SFX_4	.cache\4F\{4F4687BA-081F-201B-96C6-FFFC1734062C}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_4		49326
 	464298544	Heavy Footsteps_Concrete_SFX_5	.cache\0F\{0F6BDC8D-CB41-EE33-1BE2-7A1A271E479F}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_5		49326
 	471139807	Monster_Taking Damage_SFX_03	.cache\21\{21ACA9E9-02D9-EF2F-BCA7-57A36553A99D}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_03		33942
+	491922370	Typing_SFX_11	.cache\7A\{7A6EB096-E01C-F899-8439-B335D27DFC36}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_11		21096
 	530637610	Heavy Swing Attack_SFX_05	.cache\47\{470B4AFB-D66D-2411-867B-E0A9C5B540B4}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_05		30130
 	539053491	Heavy Swing Attack_SFX_03	.cache\94\{94F7F40E-9546-2B8C-2B8E-149059FAC40F}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_03		25126
 	545319319	Torch_SFX_03	.cache\B4\{B425430F-AF77-9683-D85D-45A4F83A08A1}.wem		\Containers\Default Work Unit\SFX\SFX\Torch\Torch_SFX\Torch_SFX_03		84728
 	559815180	Heavy Footsteps_Concrete_SFX_7	.cache\D3\{D3330DE8-D1FF-81BC-63B4-CA5BB2D17E5D}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_7		49326
 	561361336	Monster_Dying_03	.cache\0B\{0BA3460C-00ED-4C52-13F1-D6065E0AA820}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_03		139056
+	567586919	Mouse_Click_SFX_01	.cache\08\{08E226E0-9478-B68C-CC77-5AF693DF0969}.wem		\Containers\Default Work Unit\SFX\SFX\Mouse_Click\Mouse_Click_SFX_01		19552
 	570848412	Heavy Footsteps_Concrete_SFX_6	.cache\8A\{8A9CA77E-CA76-0FEC-93DA-8D322238DAF4}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_6		37020
 	595690244	Monster_Taking Damage_SFX_04	.cache\55\{55846FC0-4FBB-3C2A-65AC-36BA2FE6EA4C}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_04		30866
 	601360182	Owl_SFX_01	.cache\29\{29FE1B11-7224-4328-A13C-5BBB91FA37C2}.wem		\Containers\Default Work Unit\SFX\BG\Owl\Owl_SFX\Owl_SFX_01		787776
 	672200095	Monster Short Attack_SFX_04	.cache\89\{897DE346-EC9F-372D-71CB-6568802C482B}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_04		170004
 	673111649	Heavy Monster_Sleeping_02	.cache\8F\{8F10F3DA-0FC7-72D0-F311-E7FC204771FD}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Sleep\Heavy Monster_Sleeping_02		1649302
 	690440610	Heavy Footsteps_Concrete_SFX_2	.cache\B3\{B30E27AA-931B-D255-AB03-E493FEFE3D94}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_2		49326
+	745087370	Coin_SFX_04	.cache\3D\{3D53E6F4-6177-1A5C-F627-677DBCE8CC36}.wem		\Containers\Default Work Unit\SFX\SFX\Coin\Coin_Ram\Coin_SFX_04		138096
 	746145737	Monster_Taking Damage_SFX_01	.cache\C5\{C5D9F3E9-0DB7-B3D8-3A98-B0BA98F7C796}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_01		37020
+	768524929	Intro_Ambience_roomtone_SFX_01	.cache\03\{03935AC4-DA1F-0EC1-4CC3-84121E31174D}.wem		\Containers\Default Work Unit\SFX\BG\Intro_BG\Intro_Ambience_roomtone_SFX_01		44772024
 	771801313	Monster_Taking Damage_SFX_07	.cache\C7\{C7557DC7-5A24-8FB2-BD1E-13E814133D08}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_07		30866
 	777475319	Monster_Dying_04	.cache\C0\{C02E209C-5710-2538-A45D-68DD856C8117}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_04		139056
+	800486418	Coin_SFX_03	.cache\EE\{EE5E49C8-59E9-1143-9671-03C84E06FE2B}.wem		\Containers\Default Work Unit\SFX\SFX\Coin\Coin_Ram\Coin_SFX_03		138096
+	818453510	Typing_SFX_06	.cache\B2\{B24C58FB-A1C1-FA2D-13C4-959B91AE7FC4}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_06		27096
 	822342776	Heavy Swing Attack_SFX_02	.cache\E4\{E4CE70AF-28C8-4053-8B72-6675E074320E}.wem		\Containers\Default Work Unit\SFX\Character\Attack\Heavy Attack_SFX\Heavy Swing Attack_SFX_02		30808
 	832371534	Monster Short Attack_SFX_03	.cache\00\{00AEDCD0-6D40-FE1A-C793-26770ACD9FB5}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_03		295476
 	835930381	Owl_SFX_02	.cache\8F\{8FC8EFFA-2C6D-649F-AFB8-149C2A4CC0E9}.wem		\Containers\Default Work Unit\SFX\BG\Owl\Owl_SFX\Owl_SFX_02		664702
@@ -73,6 +103,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	875338398	Wind Noise_SFX_01	.cache\AD\{AD16CAE7-BBB8-A0A9-8133-34FD1BC933E1}.wem		\Containers\Default Work Unit\SFX\BG\BG\Wind Noise_SFX_01		11815296
 	890214870	Heavy Footsteps_Concrete_SFX_8	.cache\E7\{E70BBD0D-52F1-5AD4-5231-84FFAE45FE5D}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_8		43174
 	891077320	Monster Short Attack_SFX_07	.cache\67\{672EB00E-1A09-31F3-69C5-DF9BA9188F29}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_07		172404
+	918236435	Coin_SFX_02	.cache\6F\{6F8F1C4C-E114-2C5C-CBD3-9E6D008801B9}.wem		\Containers\Default Work Unit\SFX\SFX\Coin\Coin_Ram\Coin_SFX_02		156096
 	936935450	Monster Short Attack_SFX_01	.cache\E8\{E8F96234-8863-AD6F-B9CE-5D650BB636BD}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Short Attack 1\Monster Short Attack_SFX_01		197016
 	938792546	tranquilizer_SFX_01	.cache\79\{79190F26-EE0A-3514-C22B-082D9685E778}.wem		\Containers\Default Work Unit\SFX\SFX\Tranqillizer\Tranqillizer_SFX\tranquilizer_SFX_01		73942
+	975084610	Coin bag_SFX_02	.cache\8C\{8CA14A84-8A88-7FF0-F0C5-F5B139DEC395}.wem		\Containers\Default Work Unit\SFX\SFX\Coin_Bag\Coin_Bag_Ram\Coin bag_SFX_02		156096
+	995998401	Coin_SFX_01	.cache\EF\{EF65CB27-F6B7-C174-BAC5-2BEFB6AFAB79}.wem		\Containers\Default Work Unit\SFX\SFX\Coin\Coin_Ram\Coin_SFX_01		120096
+	1004416732	Coin machine_SFX_01	.cache\F8\{F8FEBCE7-BE05-055C-6052-D817F0E50D54}.wem		\Containers\Default Work Unit\SFX\SFX\Coin_Machine\Coin machine_SFX_01		162096
+	1042949853	Typing_SFX_13	.cache\28\{28E57C54-8C4E-9EC9-F16E-EAD9D73B5AD9}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_13		24096
 

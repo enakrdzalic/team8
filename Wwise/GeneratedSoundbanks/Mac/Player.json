@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2A20D06E-CCD5-43BD-807E-9D3D62AED106}",
     "Language": "SFX",
-    "Hash": "{3929462D-8793-16F3-897A-A59F4AC553A8}",
+    "Hash": "{3D4080CF-1641-1830-93A6-29BBA34249F2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
     "ShortName": "Player",
     "Path": "Player.bnk",
@@ -56,12 +56,28 @@
       "CachePath": "7C/{7C4E9A92-122D-C2CB-FBB1-9B76EA789D61}.wem"
      },
      {
+      "Id": "86192214",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_08.wav",
+      "CachePath": "16/{1614D498-50C8-AAC3-59FA-96EE46AB3523}.wem"
+     },
+     {
       "Id": "94170573",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Insect_SFX_02.wav",
       "CachePath": "FC/{FCC967B7-50D1-4D83-FBAB-DA33C353DC92}.wem"
+     },
+     {
+      "Id": "115704002",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_07.wav",
+      "CachePath": "6A/{6A9CC0C2-4B0D-E61E-3BE0-1BA77197DF3C}.wem"
      },
      {
       "Id": "149486299",
@@ -78,6 +94,14 @@
       "Location": "Memory",
       "ShortName": "Heavy Footsteps_Concrete_SFX_1.wav",
       "CachePath": "AD/{AD226BAF-46A7-F2D7-ED02-09B3CEEF5711}.wem"
+     },
+     {
+      "Id": "158677212",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin bag_SFX_04.wav",
+      "CachePath": "7E/{7EAF261C-2C1B-0BC8-828E-405DDD800EB9}.wem"
      },
      {
       "Id": "172710663",
@@ -104,12 +128,44 @@
       "CachePath": "2F/{2F5D5C0B-C574-0284-C70A-12828E034245}.wem"
      },
      {
+      "Id": "202383047",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_01.wav",
+      "CachePath": "AF/{AFDC4208-8551-CCC4-3B48-511BDE27AB56}.wem"
+     },
+     {
+      "Id": "211012503",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_09.wav",
+      "CachePath": "D2/{D2EEEA65-BBE5-9FBC-6352-822E70377A28}.wem"
+     },
+     {
+      "Id": "220076888",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_12.wav",
+      "CachePath": "9B/{9B83848A-40DB-C38A-FBF4-8773525FCA77}.wem"
+     },
+     {
       "Id": "243504755",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Monster_Drag_02.wav",
       "CachePath": "8A/{8A1DDAB1-8E80-64AA-BF33-BF4D6E5747E5}.wem"
+     },
+     {
+      "Id": "243556386",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_02.wav",
+      "CachePath": "E0/{E0119C26-537F-EC10-4F70-1190BA159A7A}.wem"
      },
      {
       "Id": "248804481",
@@ -136,6 +192,22 @@
       "CachePath": "55/{55D11DA9-1479-09A3-5FCE-67C0D4D32D09}.wem"
      },
      {
+      "Id": "277333294",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_05.wav",
+      "CachePath": "1B/{1BCB6E5A-550A-40E5-DF1E-B7BF5BEFC09B}.wem"
+     },
+     {
+      "Id": "310536284",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_04.wav",
+      "CachePath": "40/{400BEE07-4709-1A6C-B9E8-EE2150028DBE}.wem"
+     },
+     {
       "Id": "314941114",
       "Language": "SFX",
       "Streaming": "false",
@@ -144,12 +216,28 @@
       "CachePath": "F4/{F40E0522-9004-487F-3D9C-D3A3C3B946AD}.wem"
      },
      {
+      "Id": "321148512",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_10.wav",
+      "CachePath": "2A/{2A73AD28-AEA8-8DB6-D5E3-49975B065364}.wem"
+     },
+     {
       "Id": "331792790",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_05.wav",
       "CachePath": "7F/{7FD08131-70FE-C3BF-732F-B2A43DE513CF}.wem"
+     },
+     {
+      "Id": "333146565",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_03.wav",
+      "CachePath": "11/{11859BF3-6358-C47F-720D-FD05E85EBD1D}.wem"
      },
      {
       "Id": "334316413",
@@ -176,12 +264,36 @@
       "CachePath": "34/{34F86B16-BB30-7F8C-C86D-698521CAF954}.wem"
      },
      {
+      "Id": "356491074",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin bag_SFX_03.wav",
+      "CachePath": "4F/{4F22EDE9-2723-5F97-AE64-135ED1883EE4}.wem"
+     },
+     {
       "Id": "356571215",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Heavy Swing Attack_SFX_01.wav",
       "CachePath": "60/{60187730-4D40-15A0-7619-3A561B872D06}.wem"
+     },
+     {
+      "Id": "366869268",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_14.wav",
+      "CachePath": "56/{56FA4E5B-872A-2327-685E-7C9795F97B48}.wem"
+     },
+     {
+      "Id": "376734161",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin bag_SFX_01.wav",
+      "CachePath": "71/{71F2DE24-35F6-C792-0481-4B0461D96C4C}.wem"
      },
      {
       "Id": "378802375",
@@ -264,6 +376,14 @@
       "CachePath": "21/{21ACA9E9-02D9-EF2F-BCA7-57A36553A99D}.wem"
      },
      {
+      "Id": "491922370",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_11.wav",
+      "CachePath": "7A/{7A6EB096-E01C-F899-8439-B335D27DFC36}.wem"
+     },
+     {
       "Id": "530637610",
       "Language": "SFX",
       "Streaming": "false",
@@ -302,6 +422,14 @@
       "Location": "Memory",
       "ShortName": "Monster_Dying_03.wav",
       "CachePath": "0B/{0BA3460C-00ED-4C52-13F1-D6065E0AA820}.wem"
+     },
+     {
+      "Id": "567586919",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mouse_Click_SFX_01.wav",
+      "CachePath": "08/{08E226E0-9478-B68C-CC77-5AF693DF0969}.wem"
      },
      {
       "Id": "570848412",
@@ -352,12 +480,28 @@
       "CachePath": "B3/{B30E27AA-931B-D255-AB03-E493FEFE3D94}.wem"
      },
      {
+      "Id": "745087370",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin_SFX_04.wav",
+      "CachePath": "3D/{3D53E6F4-6177-1A5C-F627-677DBCE8CC36}.wem"
+     },
+     {
       "Id": "746145737",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_01.wav",
       "CachePath": "C5/{C5D9F3E9-0DB7-B3D8-3A98-B0BA98F7C796}.wem"
+     },
+     {
+      "Id": "768524929",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Intro_Ambience_roomtone_SFX_01.wav",
+      "CachePath": "03/{03935AC4-DA1F-0EC1-4CC3-84121E31174D}.wem"
      },
      {
       "Id": "771801313",
@@ -374,6 +518,22 @@
       "Location": "Memory",
       "ShortName": "Monster_Dying_04.wav",
       "CachePath": "C0/{C02E209C-5710-2538-A45D-68DD856C8117}.wem"
+     },
+     {
+      "Id": "800486418",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin_SFX_03.wav",
+      "CachePath": "EE/{EE5E49C8-59E9-1143-9671-03C84E06FE2B}.wem"
+     },
+     {
+      "Id": "818453510",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_06.wav",
+      "CachePath": "B2/{B24C58FB-A1C1-FA2D-13C4-959B91AE7FC4}.wem"
      },
      {
       "Id": "822342776",
@@ -432,6 +592,14 @@
       "CachePath": "67/{672EB00E-1A09-31F3-69C5-DF9BA9188F29}.wem"
      },
      {
+      "Id": "918236435",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin_SFX_02.wav",
+      "CachePath": "6F/{6F8F1C4C-E114-2C5C-CBD3-9E6D008801B9}.wem"
+     },
+     {
       "Id": "936935450",
       "Language": "SFX",
       "Streaming": "false",
@@ -446,9 +614,72 @@
       "Location": "Memory",
       "ShortName": "SFX\\SFX\\Tranqillizer\\tranquilizer_SFX_01.wav",
       "CachePath": "79/{79190F26-EE0A-3514-C22B-082D9685E778}.wem"
+     },
+     {
+      "Id": "975084610",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin bag_SFX_02.wav",
+      "CachePath": "8C/{8CA14A84-8A88-7FF0-F0C5-F5B139DEC395}.wem"
+     },
+     {
+      "Id": "995998401",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin_SFX_01.wav",
+      "CachePath": "EF/{EF65CB27-F6B7-C174-BAC5-2BEFB6AFAB79}.wem"
+     },
+     {
+      "Id": "1004416732",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Coin machine_SFX_01.wav",
+      "CachePath": "F8/{F8FEBCE7-BE05-055C-6052-D817F0E50D54}.wem"
+     },
+     {
+      "Id": "1042949853",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Typing_SFX_13.wav",
+      "CachePath": "28/{28E57C54-8C4E-9EC9-F16E-EAD9D73B5AD9}.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "69798558",
+       "Name": "Parametric_EQ (Custom)",
+       "ObjectPath": "\\Containers\\Default Work Unit\\SFX\\BG\\Intro_BG\\[Effect Slot [0]: (Parametric EQ)]\\Parametric_EQ (Custom)",
+       "GUID": "{8DD2F114-94B6-49BF-BBD7-D923AFC68CCF}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
     "Events": [
+     {
+      "Id": "1488234343",
+      "Name": "Intro_BG_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Intro_BG\\Intro_BG_Main",
+      "GUID": "{A3E8C926-611F-4890-BFA9-FF6CCC007383}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "768524929"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "69798558"
+        }
+       ]
+      }
+     },
      {
       "Id": "1871703286",
       "Name": "Play_Amb_Main",
@@ -497,6 +728,66 @@
        },
        {
         "Id": "875338398"
+       }
+      ]
+     },
+     {
+      "Id": "2535968479",
+      "Name": "Play_Coin_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Coin\\Play_Coin_Main",
+      "GUID": "{9CF83475-681A-45C4-AE40-8EEC4BCBE13B}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.25",
+      "DurationMax": "1.625",
+      "MediaRefs": [
+       {
+        "Id": "745087370"
+       },
+       {
+        "Id": "800486418"
+       },
+       {
+        "Id": "918236435"
+       },
+       {
+        "Id": "995998401"
+       }
+      ]
+     },
+     {
+      "Id": "3715660239",
+      "Name": "Play_CoinBag_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Coin\\Play_CoinBag_Main",
+      "GUID": "{31708745-AFB8-45B8-AA29-E18C069DD0A8}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.25",
+      "DurationMax": "1.625",
+      "MediaRefs": [
+       {
+        "Id": "158677212"
+       },
+       {
+        "Id": "356491074"
+       },
+       {
+        "Id": "376734161"
+       },
+       {
+        "Id": "975084610"
+       }
+      ]
+     },
+     {
+      "Id": "2921373780",
+      "Name": "Play_CoinMachine_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Coin\\Play_CoinMachine_Main",
+      "GUID": "{743F443E-F958-4478-8343-15E2E43363E2}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.6875",
+      "DurationMax": "1.6875",
+      "MediaRefs": [
+       {
+        "Id": "1004416732"
        }
       ]
      },
@@ -664,6 +955,20 @@
       ]
      },
      {
+      "Id": "1623423870",
+      "Name": "Play_Mouse_Click_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Mouse Click\\Play_Mouse_Click_Main",
+      "GUID": "{0A45503A-1FB9-4661-A4B6-8EF5E78F111D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.20266667",
+      "DurationMax": "0.20266667",
+      "MediaRefs": [
+       {
+        "Id": "567586919"
+       }
+      ]
+     },
+     {
       "Id": "1164316878",
       "Name": "Play_MS_Main",
       "ObjectPath": "\\Events\\Default Work Unit\\Monster\\Play_MS_Main",
@@ -736,10 +1041,73 @@
       ]
      },
      {
+      "Id": "176559217",
+      "Name": "Play_Typing_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Typing\\Play_Typing_Main",
+      "GUID": "{9FE2468B-89EB-432A-AE89-F77F319CE2C7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.12528263",
+      "DurationMax": "0.42092326",
+      "MediaRefs": [
+       {
+        "Id": "86192214"
+       },
+       {
+        "Id": "115704002"
+       },
+       {
+        "Id": "202383047"
+       },
+       {
+        "Id": "211012503"
+       },
+       {
+        "Id": "220076888"
+       },
+       {
+        "Id": "243556386"
+       },
+       {
+        "Id": "277333294"
+       },
+       {
+        "Id": "310536284"
+       },
+       {
+        "Id": "321148512"
+       },
+       {
+        "Id": "333146565"
+       },
+       {
+        "Id": "366869268"
+       },
+       {
+        "Id": "491922370"
+       },
+       {
+        "Id": "818453510"
+       },
+       {
+        "Id": "1042949853"
+       }
+      ]
+     },
+     {
       "Id": "970928956",
       "Name": "Stop_Combat_Music",
       "ObjectPath": "\\Events\\Default Work Unit\\Music\\Stop_Combat_Music",
       "GUID": "{6262E7CE-19FC-4C99-A965-A868555CC11D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2197227248",
+      "Name": "Stop_Intro_BG",
+      "ObjectPath": "\\Events\\Default Work Unit\\Intro_BG\\Stop_Intro_BG",
+      "GUID": "{4A18B9A1-259A-42B0-ABB9-061AED68A1FC}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
@@ -770,6 +1138,6 @@
     ]
    }
   ],
-  "FileHash": "{2D76EDD6-CF18-1BEB-F6A0-DB1F55A629A2}"
+  "FileHash": "{AD62BDEA-8190-F46E-BCD8-2A9A91E4E7DD}"
  }
 }

@@ -10,7 +10,8 @@ const CHAR_SECONDS := 0.03
 
 var _tween: Tween
 var _done := false
-
+var _last_count := 0
+var _in_money := false
 
 func _ready() -> void:
 	report.text = _build_report()
@@ -64,7 +65,38 @@ func _finish_typing() -> void:
 
 func _on_next_pressed() -> void:
 	button.disabled = true
+	$UI_Click.post_event()
+	Wwise.post_event("Stop_Intro_BG", $Intro_Music)
+	await get_tree().create_timer(1.0).timeout 
 	GameManager.start_next_night()
 	GameManager.fade_from_black = true
 	GameManager.set_state(GameManager.GameState.PLAYING)
 	SceneManager.change_scene(MAIN_SCENE)
+
+func _process(_delta: float) -> void:
+	var count := report.visible_characters
+	if count <= _last_count:
+		return
+	var text := report.text
+	var typed := false
+	var coin := false
+	var total := false
+	for i in range(_last_count, count):
+		var letter := text[i]
+		if letter == "$":
+			_in_money = true
+		var next := text[i + 1] if i + 1 < text.length() else "\n"
+		if _in_money and next == "\n":
+			coin = true
+			_in_money = false
+			if i == text.length() - 1:
+				total = true
+		if letter != " " and letter != "\n":
+			typed = true
+	if typed:
+		$UI_Typing.post_event()
+	if total:
+		$Cash_Register.post_event()
+	elif coin:
+		$Coin.post_event()
+	_last_count = count

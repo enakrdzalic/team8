@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://cnww65fn13r57"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_Typing_Main"
+id = 176559217
+guid = "{9FE2468B-89EB-432A-AE89-F77F319CE2C7}"
+dummy = true

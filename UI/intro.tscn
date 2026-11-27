@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://c0tqwfseoaipa"]
 
-[ext_resource type="Script" uid="uid://a8k2introtx01" path="res://UI/intro.gd" id="1_intro"]
+[ext_resource type="Script" uid="uid://8k2introtx01" path="res://UI/intro.gd" id="1_intro"]
+[ext_resource type="WwiseBank" uid="uid://bkestvr0rq8bk" path="res://Wwise/resources/SoundBank/{2A20D06E-CCD5-43BD-807E-9D3D62AED106}.tres" id="2_sptw6"]
+[ext_resource type="WwiseEvent" uid="uid://cnww65fn13r57" path="res://Wwise/resources/Event/{9FE2468B-89EB-432A-AE89-F77F319CE2C7}.tres" id="3_s8pxw"]
+[ext_resource type="WwiseEvent" uid="uid://bxo05pxmgfcum" path="res://Wwise/resources/Event/{A3E8C926-611F-4890-BFA9-FF6CCC007383}.tres" id="3_wbfti"]
+[ext_resource type="WwiseEvent" uid="uid://blq1de3ge8pfa" path="res://Wwise/resources/Event/{0A45503A-1FB9-4661-A4B6-8EF5E78F111D}.tres" id="4_1qpgo"]
 
 [node name="Intro" type="Control" unique_id=1847264201]
 layout_mode = 3
@@ -10,6 +14,24 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_intro")
+
+[node name="AkBank" type="AkBank" parent="." unique_id=763375864]
+bank = ExtResource("2_sptw6")
+load_on = 1
+unload_on = 3
+
+[node name="AkListener2D" type="AkListener2D" parent="." unique_id=79281743]
+
+[node name="Intro_Music" type="AkEvent2D" parent="." unique_id=1322311483]
+event = ExtResource("3_wbfti")
+trigger_on = 1
+stop_on = 3
+
+[node name="UI_Typing" type="AkEvent2D" parent="." unique_id=815307724]
+event = ExtResource("3_s8pxw")
+
+[node name="UI_Click" type="AkEvent2D" parent="." unique_id=859397471]
+event = ExtResource("4_1qpgo")
 
 [node name="Background" type="ColorRect" parent="." unique_id=1847264202]
 layout_mode = 1
@@ -22,6 +44,7 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Story" type="Label" parent="." unique_id=1847264203]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,15 +55,11 @@ offset_right = -160.0
 offset_bottom = -240.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 theme_override_colors/font_color = Color(0.96, 0.94, 0.88, 1)
 theme_override_constants/line_spacing = 18
 theme_override_font_sizes/font_size = 32
 text = "I was just a butcher living in a simple town, before it got overrun with terrifying monsters that terrorize us after the sun goes down. In order to feed the people of this town, I have taken it upon myself to venture out and harvest their meat."
-horizontal_alignment = 0
-vertical_alignment = 0
 autowrap_mode = 3
-texture_filter = 1
 
 [node name="ContinueButton" type="Button" parent="." unique_id=1847264204]
 visible = false
@@ -56,4 +75,5 @@ offset_top = -148.0
 offset_right = 160.0
 offset_bottom = -68.0
 grow_horizontal = 2
+grow_vertical = 0
 text = "Continue."

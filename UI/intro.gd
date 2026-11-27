@@ -11,7 +11,7 @@ const CHAR_SECONDS := 0.036
 
 var _tween: Tween
 var _done := false
-
+var _last_count := 0
 
 func _ready() -> void:
 	story.text = STORY
@@ -52,8 +52,18 @@ func _finish_typing() -> void:
 
 
 func _on_continue_pressed() -> void:
+	$UI_Click.post_event()
+	Wwise.post_event("Stop_Intro_BG", $Intro_Music) 
+	await get_tree().create_timer(0.5).timeout 
 	button.disabled = true
 	GameManager.new_game()
 	GameManager.fade_from_black = true
 	GameManager.set_state(GameManager.GameState.PLAYING)
 	SceneManager.change_scene(MAIN_SCENE)
+func _process(_delta: float) -> void:
+	var count := story.visible_characters
+	if count > _last_count:
+		var letter := STORY.substr(count - 1, 1)
+		if letter != " ":
+			$UI_Typing.post_event()
+		_last_count = count

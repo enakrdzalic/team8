@@ -34,6 +34,7 @@ func _ready() -> void:
 func _on_kill_pressed() -> void:
 	if _ending:
 		return
+	$UI_Click.post_event()
 	GameManager.record_kill()
 	_refresh_counts()
 
@@ -41,6 +42,7 @@ func _on_kill_pressed() -> void:
 func _on_drag_pressed() -> void:
 	if _ending:
 		return
+	$UI_Click.post_event()
 	GameManager.record_drag()
 	_refresh_counts()
 
@@ -61,6 +63,7 @@ func _style_counter(target: Label) -> void:
 func _on_end_night_pressed() -> void:
 	if _ending:
 		return
+	$UI_Click.post_event()
 	_ending = true
 	# The fade also swallows clicks while the screen goes dark.
 	fade.mouse_filter = Control.MOUSE_FILTER_STOP

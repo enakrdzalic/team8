@@ -13,19 +13,26 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID INTRO_BG_MAIN = 1488234343U;
         static const AkUniqueID PLAY_AMB_MAIN = 1871703286U;
         static const AkUniqueID PLAY_BG_MAIN = 3981986209U;
+        static const AkUniqueID PLAY_COIN_MAIN = 2535968479U;
+        static const AkUniqueID PLAY_COINBAG_MAIN = 3715660239U;
+        static const AkUniqueID PLAY_COINMACHINE_MAIN = 2921373780U;
         static const AkUniqueID PLAY_FOOTSTEP_MAIN = 1262687212U;
         static const AkUniqueID PLAY_HEAVYATTACK_MAIN = 396585373U;
         static const AkUniqueID PLAY_MA_MAIN = 3609265728U;
         static const AkUniqueID PLAY_MD_MAIN = 1327240191U;
         static const AkUniqueID PLAY_MDAMAGE_MAIN = 1978162964U;
         static const AkUniqueID PLAY_MDRAG_MAIN = 2526232351U;
+        static const AkUniqueID PLAY_MOUSE_CLICK_MAIN = 1623423870U;
         static const AkUniqueID PLAY_MS_MAIN = 1164316878U;
         static const AkUniqueID PLAY_MUSIC_MAIN = 1614763749U;
         static const AkUniqueID PLAY_TORCH = 2025845440U;
         static const AkUniqueID PLAY_TRANQILLIZER_MAIN = 3024457733U;
+        static const AkUniqueID PLAY_TYPING_MAIN = 176559217U;
         static const AkUniqueID STOP_COMBAT_MUSIC = 970928956U;
+        static const AkUniqueID STOP_INTRO_BG = 2197227248U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -65,15 +72,16 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID AMBINECE = 3497315283U;
         static const AkUniqueID ATTACK = 180661997U;
         static const AkUniqueID BG = 1870080928U;
         static const AkUniqueID BG_AMBIENCE = 3883537504U;
         static const AkUniqueID CHARACTER = 436743010U;
+        static const AkUniqueID COIN = 3603273110U;
         static const AkUniqueID COMBAT_MUSIC = 1932095129U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID INSECT = 3534600765U;
+        static const AkUniqueID INTRO_AMBINECE = 2093333966U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
         static const AkUniqueID MONSTER = 2376328173U;
         static const AkUniqueID MOUSE_CLICK = 3695522715U;

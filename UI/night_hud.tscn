@@ -1,12 +1,13 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://dpo7yr3c5nd8a"]
 
-[ext_resource type="Script" path="res://UI/night_hud.gd" id="1_hud"]
+[ext_resource type="Script" uid="uid://dv2iv8xoktsg6" path="res://UI/night_hud.gd" id="1_hud"]
+[ext_resource type="WwiseEvent" uid="uid://blq1de3ge8pfa" path="res://Wwise/resources/Event/{0A45503A-1FB9-4661-A4B6-8EF5E78F111D}.tres" id="2_0t16h"]
 
-[node name="NightHud" type="CanvasLayer"]
+[node name="NightHud" type="CanvasLayer" unique_id=714248857]
 layer = 10
 script = ExtResource("1_hud")
 
-[node name="KillButton" type="Button" parent="."]
+[node name="KillButton" type="Button" parent="." unique_id=1077469365]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -17,7 +18,7 @@ offset_bottom = 72.0
 grow_horizontal = 0
 text = "Kill monster"
 
-[node name="DragButton" type="Button" parent="."]
+[node name="DragButton" type="Button" parent="." unique_id=516691413]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -28,7 +29,7 @@ offset_bottom = 128.0
 grow_horizontal = 0
 text = "Drag monster"
 
-[node name="KillCount" type="Label" parent="."]
+[node name="KillCount" type="Label" parent="." unique_id=1042473830]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -37,12 +38,11 @@ offset_top = 24.0
 offset_right = -232.0
 offset_bottom = 72.0
 grow_horizontal = 0
-mouse_filter = 2
 text = "0"
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="DragCount" type="Label" parent="."]
+[node name="DragCount" type="Label" parent="." unique_id=1429917899]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -51,12 +51,11 @@ offset_top = 80.0
 offset_right = -232.0
 offset_bottom = 128.0
 grow_horizontal = 0
-mouse_filter = 2
 text = "0"
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="EndNightButton" type="Button" parent="."]
+[node name="EndNightButton" type="Button" parent="." unique_id=2134253559]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -67,7 +66,7 @@ offset_bottom = 72.0
 grow_horizontal = 2
 text = "End night"
 
-[node name="Fade" type="ColorRect" parent="."]
+[node name="Fade" type="ColorRect" parent="." unique_id=1420254601]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -75,3 +74,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0)
+
+[node name="UI_Click" type="AkEvent2D" parent="." unique_id=516431725]
+event = ExtResource("2_0t16h")
