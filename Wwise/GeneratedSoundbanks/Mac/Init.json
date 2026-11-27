@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{ECADDBFD-4EE6-629D-75B8-34AC63039FEE}",
+    "Hash": "{AF8B247C-053A-54D0-12D5-138B010894C6}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -31,6 +31,14 @@
        "GUID": "{4955D6DC-7330-4F0F-9D87-1196D963D4FA}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
+      },
+      {
+       "Id": "801331279",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Coin\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{42E24619-8FDC-48F2-95F0-091AC5AB2125}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
       },
       {
        "Id": "914994510",
@@ -220,6 +228,20 @@
        "ShareSets": [
         {
          "Id": "2141574376"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3603273110",
+      "Name": "Coin",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Coin",
+      "GUID": "{689D86E3-5ED2-4602-927F-AED77DC9BFCF}",
+      "Color": "4",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "801331279"
         }
        ]
       }
@@ -823,6 +845,6 @@
     ]
    }
   ],
-  "FileHash": "{9026BF2E-941C-D9B5-982A-AE442BCE467F}"
+  "FileHash": "{B677799E-CA47-8E02-1205-A471035F248A}"
  }
 }

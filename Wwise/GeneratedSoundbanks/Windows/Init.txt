@@ -15,6 +15,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2775822200	Tranqillizer			\Default Work Unit\Main Audio Bus\SFX\Tranqillizer	
 	3497315283	Ambinece			\Default Work Unit\Main Audio Bus\Music\Ambinece	
 	3534600765	Insect			\Default Work Unit\Main Audio Bus\BG Ambience\Insect	
+	3603273110	Coin			\Default Work Unit\Main Audio Bus\SFX\Coin	
 	3695522715	Mouse_Click			\Default Work Unit\Main Audio Bus\SFX\Mouse_Click	
 	3773007966	Open_Bag			\Default Work Unit\Main Audio Bus\SFX\Open_Bag	
 	3883537504	BG Ambience			\Default Work Unit\Main Audio Bus\BG Ambience	
@@ -23,6 +24,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	584108288	Parametric EQ (Custom)	Wwise Parametric EQ			
 	596671754	Hall_Large_Dark (Custom)	Wwise RoomVerb			
+	801331279	Parametric EQ (Custom)	Wwise Parametric EQ			
 	914994510	Parametric EQ (Custom)	Wwise Parametric EQ			
 	2141574376	Parametric_EQ	Wwise Parametric EQ			
 
