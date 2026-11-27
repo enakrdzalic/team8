@@ -34,9 +34,10 @@ func _process(_delta: float) -> void:
 	var body := get_parent() as CharacterBody2D
 	if body == null:
 		return
-	var aim: Vector2 = body.get("last_direction")
-	if aim.length_squared() < 0.001:
-		aim = Vector2.RIGHT
+	var facing: Variant = body.get("last_direction")
+	var aim := Vector2.RIGHT
+	if facing is Vector2 and facing.length_squared() >= 0.001:
+		aim = facing
 	rotation = aim.angle()
 
 

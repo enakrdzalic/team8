@@ -218,18 +218,6 @@ func stop_drag_sound() -> void:
 	drag_sound_playing = false
 
 
-## Handling Damage ## 
-
-func _on_hitbox_body_entered(body: Node2D) -> void:
-	if is_attacking and body.is_in_group("Enemy"):
-		print(body.name + " hit")
-		body.take_damage(weapon_damage)
-
-func take_damage(damage: int) -> void:
-	# health = maxi(0, health - damage)
-	print("hitted")
-
-
 ## Handling Shooting ##
 
 func shoot() -> void:
