@@ -52,9 +52,9 @@ func _finish_typing() -> void:
 
 
 func _on_continue_pressed() -> void:
-	button.disabled = true
 	$UI_Click.post_event()
-	await get_tree().create_timer(0.3).timeout 
+	Wwise.post_event("Stop_Intro_Music", $Intro_Music) 
+	await get_tree().create_timer(0.5).timeout 
 	button.disabled = true
 	GameManager.new_game()
 	GameManager.fade_from_black = true

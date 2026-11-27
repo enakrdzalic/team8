@@ -5,11 +5,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	1164316878	Play_MS_Main			\Default Work Unit\Monster\Play_MS_Main	
 	1262687212	Play_Footstep_Main			\Default Work Unit\Footsteps\Play_Footstep_Main	
 	1327240191	Play_MD_Main			\Default Work Unit\Monster\Play_MD_Main	
+	1488234343	Intro_BG_Main			\Default Work Unit\Intro_BG\Intro_BG_Main	
 	1614763749	Play_Music_Main			\Default Work Unit\Music\Play_Music_Main	
 	1623423870	Play_Mouse_Click_Main			\Default Work Unit\Mouse Click\Play_Mouse_Click_Main	
 	1871703286	Play_Amb_Main			\Default Work Unit\Ambience\Play_Amb_Main	
 	1978162964	Play_MDamage_Main			\Default Work Unit\Monster Damage\Play_MDamage_Main	
 	2025845440	Play_Torch			\Default Work Unit\Torch\Play_Torch	
+	2197227248	Stop_Intro_BG			\Default Work Unit\Intro_BG\Stop_Intro_BG	
 	2526232351	Play_MDrag_Main			\Default Work Unit\Monster\Play_MDrag_Main	
 	3024457733	Play_Tranqillizer_Main			\Default Work Unit\Tranqillizer\Play_Tranqillizer_Main	
 	3609265728	Play_MA_Main			\Default Work Unit\Monster\Play_MA_Main	
@@ -21,6 +23,9 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Groundtype			
 	4248645337	Grass	Groundtype			
+
+Effect plug-ins	ID	Name	Type				Notes
+	69798558	Parametric_EQ (Custom)	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4276921	Owl_SFX_04	.cache\C7\{C7756A90-AD2E-3462-8102-4CCA6E4CB1C3}.wem		\Containers\Default Work Unit\SFX\BG\Owl\Owl_SFX\Owl_SFX_04		495474
@@ -79,6 +84,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	673111649	Heavy Monster_Sleeping_02	.cache\8F\{8F10F3DA-0FC7-72D0-F311-E7FC204771FD}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Sleep\Heavy Monster_Sleeping_02		1649302
 	690440610	Heavy Footsteps_Concrete_SFX_2	.cache\B3\{B30E27AA-931B-D255-AB03-E493FEFE3D94}.wem		\Containers\Default Work Unit\Footsteps\Footsteps_Concrete_01\Heavy Footsteps_Concrete_SFX_2		49326
 	746145737	Monster_Taking Damage_SFX_01	.cache\C5\{C5D9F3E9-0DB7-B3D8-3A98-B0BA98F7C796}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_01		37020
+	768524929	Intro_Ambience_roomtone_SFX_01	.cache\03\{03935AC4-DA1F-0EC1-4CC3-84121E31174D}.wem		\Containers\Default Work Unit\SFX\BG\Intro_BG\Intro_Ambience_roomtone_SFX_01		44772024
 	771801313	Monster_Taking Damage_SFX_07	.cache\C7\{C7557DC7-5A24-8FB2-BD1E-13E814133D08}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Damage\Monster_Taking Damage_SFX_07		30866
 	777475319	Monster_Dying_04	.cache\C0\{C02E209C-5710-2538-A45D-68DD856C8117}.wem		\Containers\Default Work Unit\SFX\Character\Monster\Monster_Dying\Monster_Dying_04		139056
 	818453510	Typing_SFX_06	.cache\B2\{B24C58FB-A1C1-FA2D-13C4-959B91AE7FC4}.wem		\Containers\Default Work Unit\SFX\SFX\Typing\Type_Ram\Typing_SFX_06		27096

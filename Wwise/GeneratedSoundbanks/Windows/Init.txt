@@ -1,5 +1,4 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	85412153	Ambience			\Default Work Unit\Main Audio Bus\Ambience	
 	180661997	Attack			\Default Work Unit\Main Audio Bus\Character\Attack	
 	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
 	436743010	Character			\Default Work Unit\Main Audio Bus\Character	
@@ -9,6 +8,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1870080928	BG			\Default Work Unit\Main Audio Bus\BG Ambience\BG	
 	1904864137	Torch			\Default Work Unit\Main Audio Bus\SFX\Torch	
 	1932095129	Combat_Music			\Default Work Unit\Main Audio Bus\Music\Combat_Music	
+	2093333966	Intro_Ambinece			\Default Work Unit\Main Audio Bus\Music\Intro_Ambinece	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 	2376328173	Monster			\Default Work Unit\Main Audio Bus\Character\Monster	
 	2385628198	Footsteps			\Default Work Unit\Main Audio Bus\Character\Footsteps	
@@ -21,7 +21,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Main Audio Bus\Music	
 
 Effect plug-ins	ID	Name	Type				Notes
+	584108288	Parametric EQ (Custom)	Wwise Parametric EQ			
 	596671754	Hall_Large_Dark (Custom)	Wwise RoomVerb			
+	914994510	Parametric EQ (Custom)	Wwise Parametric EQ			
 	2141574376	Parametric_EQ	Wwise Parametric EQ			
 
 Audio Devices	ID	Name	Type				Notes

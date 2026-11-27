@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID INTRO_BG_MAIN = 1488234343U;
         static const AkUniqueID PLAY_AMB_MAIN = 1871703286U;
         static const AkUniqueID PLAY_BG_MAIN = 3981986209U;
         static const AkUniqueID PLAY_FOOTSTEP_MAIN = 1262687212U;
@@ -28,6 +29,7 @@ namespace AK
         static const AkUniqueID PLAY_TRANQILLIZER_MAIN = 3024457733U;
         static const AkUniqueID PLAY_TYPING_MAIN = 176559217U;
         static const AkUniqueID STOP_COMBAT_MUSIC = 970928956U;
+        static const AkUniqueID STOP_INTRO_BG = 2197227248U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -67,7 +69,6 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID AMBINECE = 3497315283U;
         static const AkUniqueID ATTACK = 180661997U;
         static const AkUniqueID BG = 1870080928U;
@@ -76,6 +77,7 @@ namespace AK
         static const AkUniqueID COMBAT_MUSIC = 1932095129U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID INSECT = 3534600765U;
+        static const AkUniqueID INTRO_AMBINECE = 2093333966U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
         static const AkUniqueID MONSTER = 2376328173U;
         static const AkUniqueID MOUSE_CLICK = 3695522715U;

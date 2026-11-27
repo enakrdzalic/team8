@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2A20D06E-CCD5-43BD-807E-9D3D62AED106}",
     "Language": "SFX",
-    "Hash": "{23BAD44F-B577-BFC0-9EFC-D82231E69007}",
+    "Hash": "{1AFFFFEF-D3C4-4AA3-2714-595B2A1FDD11}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
     "ShortName": "Player",
     "Path": "Player.bnk",
@@ -464,6 +464,14 @@
       "CachePath": "C5/{C5D9F3E9-0DB7-B3D8-3A98-B0BA98F7C796}.wem"
      },
      {
+      "Id": "768524929",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Intro_Ambience_roomtone_SFX_01.wav",
+      "CachePath": "03/{03935AC4-DA1F-0EC1-4CC3-84121E31174D}.wem"
+     },
+     {
       "Id": "771801313",
       "Language": "SFX",
       "Streaming": "false",
@@ -568,7 +576,38 @@
       "CachePath": "28/{28E57C54-8C4E-9EC9-F16E-EAD9D73B5AD9}.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "69798558",
+       "Name": "Parametric_EQ (Custom)",
+       "ObjectPath": "\\Containers\\Default Work Unit\\SFX\\BG\\Intro_BG\\[Effect Slot [0]: (Parametric EQ)]\\Parametric_EQ (Custom)",
+       "GUID": "{8DD2F114-94B6-49BF-BBD7-D923AFC68CCF}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
     "Events": [
+     {
+      "Id": "1488234343",
+      "Name": "Intro_BG_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Intro_BG\\Intro_BG_Main",
+      "GUID": "{A3E8C926-611F-4890-BFA9-FF6CCC007383}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "768524929"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "69798558"
+        }
+       ]
+      }
+     },
      {
       "Id": "1871703286",
       "Name": "Play_Amb_Main",
@@ -931,6 +970,16 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "2197227248",
+      "Name": "Stop_Intro_BG",
+      "ObjectPath": "\\Events\\Default Work Unit\\Intro_BG\\Stop_Intro_BG",
+      "GUID": "{4A18B9A1-259A-42B0-ABB9-061AED68A1FC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ],
     "SwitchGroups": [
@@ -957,6 +1006,6 @@
     ]
    }
   ],
-  "FileHash": "{E775CD79-4D39-7A3A-C561-36FE5642B378}"
+  "FileHash": "{35E1422A-0D06-3A20-BE18-648B142B2C29}"
  }
 }

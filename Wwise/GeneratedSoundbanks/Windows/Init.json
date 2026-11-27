@@ -10,12 +10,20 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8CAF5693-16AC-3784-2057-3ABB89D5519C}",
+    "Hash": "{97D78A4E-F661-5F8C-6A52-8FD65FC9D224}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
      "Custom": [
+      {
+       "Id": "584108288",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\Combat_Music\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{0A2C8829-2B23-4C9A-A65B-370D220BB84D}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
       {
        "Id": "596671754",
        "Name": "Hall_Large_Dark (Custom)",
@@ -23,6 +31,14 @@
        "GUID": "{4955D6DC-7330-4F0F-9D87-1196D963D4FA}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
+      },
+      {
+       "Id": "914994510",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Character\\Footsteps\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{5623D4F0-6E63-4253-A883-1360726F0862}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
       }
      ],
      "ShareSets": [
@@ -55,12 +71,6 @@
      ]
     },
     "Busses": [
-     {
-      "Id": "85412153",
-      "Name": "Ambience",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambience",
-      "GUID": "{296CBFD1-E5C8-4B2B-A8FE-1058074D705D}"
-     },
      {
       "Id": "180661997",
       "Name": "Attack",
@@ -143,6 +153,20 @@
       "Name": "Combat_Music",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\Combat_Music",
       "GUID": "{D120DE6E-582F-438F-92D1-6D059D5BD108}",
+      "Color": "1",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "584108288"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2093333966",
+      "Name": "Intro_Ambinece",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\Intro_Ambinece",
+      "GUID": "{CF5726ED-48D3-4F32-8043-F976149FFF1E}",
       "Color": "1"
      },
      {
@@ -165,9 +189,9 @@
       "GUID": "{1896932F-41D5-40A3-B914-5E1EC804060A}",
       "Color": "11",
       "PluginRefs": {
-       "ShareSets": [
+       "Custom": [
         {
-         "Id": "2141574376"
+         "Id": "914994510"
         }
        ]
       }
@@ -233,14 +257,7 @@
       "Name": "Music",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
       "GUID": "{C6D62AA5-F279-4DEC-A95B-A73152DB1AC1}",
-      "Color": "1",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "2141574376"
-        }
-       ]
-      }
+      "Color": "1"
      }
     ],
     "GameParameters": [
@@ -806,6 +823,6 @@
     ]
    }
   ],
-  "FileHash": "{D9BD19BE-450B-834C-19A8-A829ED26262D}"
+  "FileHash": "{91946B63-3AD8-6AC5-7B48-1D80C1A60464}"
  }
 }
