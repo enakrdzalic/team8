@@ -32,6 +32,10 @@ func physicsUpdate(delta: float) -> void:
 	if not is_instance_valid(player):
 		player = get_tree().get_first_node_in_group(&"Player") as CharacterBody2D
 
+	if enemy.has_player_left_home_zone(player):
+		Transitioned.emit(self, "EnemyIdle")
+		return
+
 	for body in sight.get_overlapping_bodies():
 		if body.is_in_group(&"Player") and enemy.can_target_player(body):
 			Transitioned.emit(self, "EnemyChase")

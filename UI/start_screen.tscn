@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://b2m8startscen"]
+
+[ext_resource type="Script" uid="uid://cq7n4wstscr01" path="res://UI/start_screen.gd" id="1_start"]
+[ext_resource type="Texture2D" uid="uid://c3v4b0rfflkge" path="res://Assets/Art/keyart.png" id="2_keyart"]
+
+[node name="StartScreen" type="Control" unique_id=1847263911]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_start")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1847263912]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.05, 0.05, 0.06, 1)
+
+[node name="KeyArt" type="TextureRect" parent="." unique_id=1847263913]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_keyart")
+expand_mode = 1
+stretch_mode = 6
+texture_filter = 2
+
+[node name="BeginButton" type="Button" parent="." unique_id=1847263914]
+custom_minimum_size = Vector2(280, 64)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -120.0
+offset_right = 140.0
+offset_bottom = -48.0
+grow_horizontal = 2
+text = "Begin Game"

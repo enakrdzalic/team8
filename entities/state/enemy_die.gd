@@ -1,7 +1,7 @@
 extends State
 class_name EnemyDie
 
-signal enemy_dead
+# signal enemy_dead
 
 @export var enemy : CharacterBody2D
 
@@ -21,3 +21,7 @@ func enter() -> void:
 		music.set_meta("fighters", max(count, 0))
 		if count <= 0:
 			Wwise.post_event("Stop_Combat_Music", music)
+    enemy.mark_dead()
+    var sprite := enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
+    sprite.play(&"enemy_die")
+    # enemy_dead.emit()

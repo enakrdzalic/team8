@@ -12,6 +12,8 @@
 [ext_resource type="Script" uid="uid://bl7qfwxtdrm5y" path="res://UI/night_mode.gd" id="6_night"]
 [ext_resource type="Texture2D" uid="uid://df5j57iwlgk66" path="res://Assets/Art/city_map.png" id="7_city"]
 [ext_resource type="Script" uid="uid://dur3xre0b0h23" path="res://maps/city_collision.gd" id="8_blocks"]
+[ext_resource type="Script" uid="uid://b7n3fadeblack" path="res://UI/fade_in.gd" id="9_fade"]
+[ext_resource type="PackedScene" path="res://UI/night_hud.tscn" id="10_hud"]
 
 [node name="Main" type="Node2D" unique_id=1912012056]
 y_sort_enabled = true
@@ -59,7 +61,7 @@ script = ExtResource("5_flash")
 event = ExtResource("6_kek77")
 
 [node name="ZoneCamera" type="Camera2D" parent="." unique_id=463087367]
-zoom = Vector2(2, 2)
+zoom = Vector2(2.5, 2.5)
 script = ExtResource("4_zones")
 
 [node name="SampleEnemy" parent="." unique_id=1827295212 instance=ExtResource("2_0xm2m")]
@@ -86,14 +88,6 @@ offset_bottom = 72.0
 toggle_mode = true
 text = "Flashlight"
 
-[node name="GlowButton" type="Button" parent="NightMode/UI" unique_id=437237906]
-offset_left = 24.0
-offset_top = 80.0
-offset_right = 196.0
-offset_bottom = 128.0
-toggle_mode = true
-text = "Glow"
-
 [node name="SampleEnemy2" parent="." unique_id=2009158671 instance=ExtResource("2_0xm2m")]
 position = Vector2(1953, 2200)
 
@@ -111,6 +105,20 @@ position = Vector2(2600, 2430.395)
 
 [node name="PointB" parent="SampleEnemy3/PatrolPoints" index="1" unique_id=1244206325]
 position = Vector2(-650, 0)
+
+[node name="NightHud" parent="." instance=ExtResource("10_hud")]
+
+[node name="FadeIn" type="CanvasLayer" parent="." unique_id=884726410]
+layer = 128
+script = ExtResource("9_fade")
+
+[node name="Cover" type="ColorRect" parent="FadeIn" unique_id=884726411]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [editable path="SampleEnemy"]
 [editable path="SampleEnemy2"]

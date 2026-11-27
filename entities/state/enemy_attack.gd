@@ -24,7 +24,7 @@ func physicsUpdate(_delta: float) -> void:
 	enemy.velocity = Vector2.ZERO
 	if not is_instance_valid(player):
 		player = get_tree().get_first_node_in_group("Player") as CharacterBody2D
-	if not enemy.can_target_player(player):
+	if not enemy.can_pursue_player(player):
 		Transitioned.emit(self, "EnemyIdle")
 		return
 
