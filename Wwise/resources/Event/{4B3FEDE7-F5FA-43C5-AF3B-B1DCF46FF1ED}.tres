@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://ciw3518cnxlx7"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_Amb_Main"
+id = 1871703286
+guid = "{4B3FEDE7-F5FA-43C5-AF3B-B1DCF46FF1ED}"
+dummy = true

@@ -1,0 +1,775 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1069431850",
+    "Type": "User",
+    "GUID": "{2A20D06E-CCD5-43BD-807E-9D3D62AED106}",
+    "Language": "SFX",
+    "Hash": "{3929462D-8793-16F3-897A-A59F4AC553A8}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
+    "ShortName": "Player",
+    "Path": "Player.bnk",
+    "Media": [
+     {
+      "Id": "4276921",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Owl_SFX_04.wav",
+      "CachePath": "C7/{C7756A90-AD2E-3462-8102-4CCA6E4CB1C3}.wem"
+     },
+     {
+      "Id": "18032275",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Pink nosie_SFX_01.wav",
+      "CachePath": "B6/{B6B4C242-DEC3-6861-6451-922F7383F624}.wem"
+     },
+     {
+      "Id": "19486188",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Tranqillizer\\tranquilizer_SFX_03.wav",
+      "CachePath": "3C/{3CFF64AE-B32E-3B76-1054-B29A70F70D14}.wem"
+     },
+     {
+      "Id": "27727235",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_06.wav",
+      "CachePath": "E4/{E4981ABD-79D1-26FC-E546-ED604067C21F}.wem"
+     },
+     {
+      "Id": "31901788",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Footsteps_Concrete_SFX_3.wav",
+      "CachePath": "7C/{7C4E9A92-122D-C2CB-FBB1-9B76EA789D61}.wem"
+     },
+     {
+      "Id": "94170573",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Insect_SFX_02.wav",
+      "CachePath": "FC/{FCC967B7-50D1-4D83-FBAB-DA33C353DC92}.wem"
+     },
+     {
+      "Id": "149486299",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Don't_Butcher_It_OST .wav",
+      "CachePath": "1A/{1A24336A-7844-2FC2-F34C-1E186F204CBF}.wem"
+     },
+     {
+      "Id": "150963477",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Footsteps_Concrete_SFX_1.wav",
+      "CachePath": "AD/{AD226BAF-46A7-F2D7-ED02-09B3CEEF5711}.wem"
+     },
+     {
+      "Id": "172710663",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Tranqillizer\\tranquilizer_SFX_04.wav",
+      "CachePath": "10/{10487BAA-6227-FF3B-A90F-1C798C153169}.wem"
+     },
+     {
+      "Id": "192096856",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Monster Sleep\\Heavy Monster_Sleeping_01.wav",
+      "CachePath": "AD/{AD5DF088-A78B-B482-2FCB-5C02EDF9B803}.wem"
+     },
+     {
+      "Id": "196794876",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Monster_Dying_01.wav",
+      "CachePath": "2F/{2F5D5C0B-C574-0284-C70A-12828E034245}.wem"
+     },
+     {
+      "Id": "243504755",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Monster_Drag_02.wav",
+      "CachePath": "8A/{8A1DDAB1-8E80-64AA-BF33-BF4D6E5747E5}.wem"
+     },
+     {
+      "Id": "248804481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Torch_SFX_02.wav",
+      "CachePath": "ED/{ED6A4704-525C-E766-C4FF-8AAFB13836CB}.wem"
+     },
+     {
+      "Id": "250376658",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Torch_SFX_01.wav",
+      "CachePath": "0E/{0E6C2AA1-EBEA-4E73-2252-35EEA2E5CEB1}.wem"
+     },
+     {
+      "Id": "259190848",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Monster attack 2\\Monster Short Attack_SFX_05.wav",
+      "CachePath": "55/{55D11DA9-1479-09A3-5FCE-67C0D4D32D09}.wem"
+     },
+     {
+      "Id": "314941114",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_08.wav",
+      "CachePath": "F4/{F40E0522-9004-487F-3D9C-D3A3C3B946AD}.wem"
+     },
+     {
+      "Id": "331792790",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_05.wav",
+      "CachePath": "7F/{7FD08131-70FE-C3BF-732F-B2A43DE513CF}.wem"
+     },
+     {
+      "Id": "334316413",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Swing Attack_SFX_04.wav",
+      "CachePath": "C4/{C4B7BF31-348B-17DD-0A26-2888E5B179BD}.wem"
+     },
+     {
+      "Id": "354167331",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Combat_Music.wav",
+      "CachePath": "22/{22C68FED-E817-26A5-0D92-6D6D77387875}.wem"
+     },
+     {
+      "Id": "354602367",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Insect_SFX_04.wav",
+      "CachePath": "34/{34F86B16-BB30-7F8C-C86D-698521CAF954}.wem"
+     },
+     {
+      "Id": "356571215",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Swing Attack_SFX_01.wav",
+      "CachePath": "60/{60187730-4D40-15A0-7619-3A561B872D06}.wem"
+     },
+     {
+      "Id": "378802375",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Monster attack 2\\Monster Short Attack_SFX_02.wav",
+      "CachePath": "A1/{A1ED643C-63E9-61EF-F04C-0CE6EB74FCFA}.wem"
+     },
+     {
+      "Id": "386318904",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Swing Attack_SFX_06.wav",
+      "CachePath": "D7/{D7FBDD3A-AB41-5E54-B643-4A2BE0C849AA}.wem"
+     },
+     {
+      "Id": "389350283",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Monster_Dying_02.wav",
+      "CachePath": "DA/{DA61E930-2955-6B9F-E3B5-ABC694C42DA3}.wem"
+     },
+     {
+      "Id": "405662320",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Owl_SFX_03.wav",
+      "CachePath": "B1/{B1DEB879-5CA5-8A7C-D9A1-BC3770C17266}.wem"
+     },
+     {
+      "Id": "428612936",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_02.wav",
+      "CachePath": "03/{03888EA8-CF1A-6B4A-DA9C-2B11BC97DDEB}.wem"
+     },
+     {
+      "Id": "434481883",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Insect_SFX_01.wav",
+      "CachePath": "1D/{1D911F35-1D0E-9E45-5B58-16CA4EDFC1CF}.wem"
+     },
+     {
+      "Id": "437741399",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Insect_SFX_03.wav",
+      "CachePath": "9F/{9F61E18B-5529-4CE1-9B08-C532EA728717}.wem"
+     },
+     {
+      "Id": "458323661",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Footsteps_Concrete_SFX_4.wav",
+      "CachePath": "4F/{4F4687BA-081F-201B-96C6-FFFC1734062C}.wem"
+     },
+     {
+      "Id": "464298544",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Footsteps_Concrete_SFX_5.wav",
+      "CachePath": "0F/{0F6BDC8D-CB41-EE33-1BE2-7A1A271E479F}.wem"
+     },
+     {
+      "Id": "471139807",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_03.wav",
+      "CachePath": "21/{21ACA9E9-02D9-EF2F-BCA7-57A36553A99D}.wem"
+     },
+     {
+      "Id": "530637610",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Swing Attack_SFX_05.wav",
+      "CachePath": "47/{470B4AFB-D66D-2411-867B-E0A9C5B540B4}.wem"
+     },
+     {
+      "Id": "539053491",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Swing Attack_SFX_03.wav",
+      "CachePath": "94/{94F7F40E-9546-2B8C-2B8E-149059FAC40F}.wem"
+     },
+     {
+      "Id": "545319319",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Torch_SFX_03.wav",
+      "CachePath": "B4/{B425430F-AF77-9683-D85D-45A4F83A08A1}.wem"
+     },
+     {
+      "Id": "559815180",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Footsteps_Concrete_SFX_7.wav",
+      "CachePath": "D3/{D3330DE8-D1FF-81BC-63B4-CA5BB2D17E5D}.wem"
+     },
+     {
+      "Id": "561361336",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Monster_Dying_03.wav",
+      "CachePath": "0B/{0BA3460C-00ED-4C52-13F1-D6065E0AA820}.wem"
+     },
+     {
+      "Id": "570848412",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Footsteps_Concrete_SFX_6.wav",
+      "CachePath": "8A/{8A9CA77E-CA76-0FEC-93DA-8D322238DAF4}.wem"
+     },
+     {
+      "Id": "595690244",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_04.wav",
+      "CachePath": "55/{55846FC0-4FBB-3C2A-65AC-36BA2FE6EA4C}.wem"
+     },
+     {
+      "Id": "601360182",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Owl_SFX_01.wav",
+      "CachePath": "29/{29FE1B11-7224-4328-A13C-5BBB91FA37C2}.wem"
+     },
+     {
+      "Id": "672200095",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Monster attack 2\\Monster Short Attack_SFX_04.wav",
+      "CachePath": "89/{897DE346-EC9F-372D-71CB-6568802C482B}.wem"
+     },
+     {
+      "Id": "673111649",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Monster Sleep\\Heavy Monster_Sleeping_02.wav",
+      "CachePath": "8F/{8F10F3DA-0FC7-72D0-F311-E7FC204771FD}.wem"
+     },
+     {
+      "Id": "690440610",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Footsteps_Concrete_SFX_2.wav",
+      "CachePath": "B3/{B30E27AA-931B-D255-AB03-E493FEFE3D94}.wem"
+     },
+     {
+      "Id": "746145737",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_01.wav",
+      "CachePath": "C5/{C5D9F3E9-0DB7-B3D8-3A98-B0BA98F7C796}.wem"
+     },
+     {
+      "Id": "771801313",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Taking Damage\\Monster_Taking Damage_SFX_07.wav",
+      "CachePath": "C7/{C7557DC7-5A24-8FB2-BD1E-13E814133D08}.wem"
+     },
+     {
+      "Id": "777475319",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Monster_Dying_04.wav",
+      "CachePath": "C0/{C02E209C-5710-2538-A45D-68DD856C8117}.wem"
+     },
+     {
+      "Id": "822342776",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Swing Attack_SFX_02.wav",
+      "CachePath": "E4/{E4CE70AF-28C8-4053-8B72-6675E074320E}.wem"
+     },
+     {
+      "Id": "832371534",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Monster attack 2\\Monster Short Attack_SFX_03.wav",
+      "CachePath": "00/{00AEDCD0-6D40-FE1A-C793-26770ACD9FB5}.wem"
+     },
+     {
+      "Id": "835930381",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Owl_SFX_02.wav",
+      "CachePath": "8F/{8FC8EFFA-2C6D-649F-AFB8-149C2A4CC0E9}.wem"
+     },
+     {
+      "Id": "860491940",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Tranqillizer\\tranquilizer_SFX_02.wav",
+      "CachePath": "BE/{BE62C767-FAA9-D4BB-1311-465F6B1E0CDF}.wem"
+     },
+     {
+      "Id": "875338398",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wind Noise_SFX_01.wav",
+      "CachePath": "AD/{AD16CAE7-BBB8-A0A9-8133-34FD1BC933E1}.wem"
+     },
+     {
+      "Id": "890214870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heavy Footsteps_Concrete_SFX_8.wav",
+      "CachePath": "E7/{E70BBD0D-52F1-5AD4-5231-84FFAE45FE5D}.wem"
+     },
+     {
+      "Id": "891077320",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Monster attack 2\\Monster Short Attack_SFX_07.wav",
+      "CachePath": "67/{672EB00E-1A09-31F3-69C5-DF9BA9188F29}.wem"
+     },
+     {
+      "Id": "936935450",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Monster\\Monster attack 2\\Monster Short Attack_SFX_01.wav",
+      "CachePath": "E8/{E8F96234-8863-AD6F-B9CE-5D650BB636BD}.wem"
+     },
+     {
+      "Id": "938792546",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\SFX\\Tranqillizer\\tranquilizer_SFX_01.wav",
+      "CachePath": "79/{79190F26-EE0A-3514-C22B-082D9685E778}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1871703286",
+      "Name": "Play_Amb_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_Amb_Main",
+      "GUID": "{4B3FEDE7-F5FA-43C5-AF3B-B1DCF46FF1ED}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "149486299"
+       }
+      ]
+     },
+     {
+      "Id": "3981986209",
+      "Name": "Play_BG_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\BG\\Play_BG_Main",
+      "GUID": "{BF1A7A68-C191-40B0-87CD-21BFBE5E014F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "4276921"
+       },
+       {
+        "Id": "18032275"
+       },
+       {
+        "Id": "94170573"
+       },
+       {
+        "Id": "354602367"
+       },
+       {
+        "Id": "405662320"
+       },
+       {
+        "Id": "434481883"
+       },
+       {
+        "Id": "437741399"
+       },
+       {
+        "Id": "601360182"
+       },
+       {
+        "Id": "835930381"
+       },
+       {
+        "Id": "875338398"
+       }
+      ]
+     },
+     {
+      "Id": "1262687212",
+      "Name": "Play_Footstep_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\Play_Footstep_Main",
+      "GUID": "{92747C86-C481-4B22-A986-B340C1F36FBA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3234298",
+      "DurationMax": "0.6098403",
+      "MediaRefs": [
+       {
+        "Id": "31901788"
+       },
+       {
+        "Id": "150963477"
+       },
+       {
+        "Id": "458323661"
+       },
+       {
+        "Id": "464298544"
+       },
+       {
+        "Id": "559815180"
+       },
+       {
+        "Id": "570848412"
+       },
+       {
+        "Id": "690440610"
+       },
+       {
+        "Id": "890214870"
+       }
+      ]
+     },
+     {
+      "Id": "396585373",
+      "Name": "Play_HeavyAttack_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Heavy Attack\\Play_HeavyAttack_Main",
+      "GUID": "{2F14897B-45E4-4DC2-A861-68659BF21D7D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22097917",
+      "DurationMax": "0.4687694",
+      "MediaRefs": [
+       {
+        "Id": "334316413"
+       },
+       {
+        "Id": "356571215"
+       },
+       {
+        "Id": "386318904"
+       },
+       {
+        "Id": "530637610"
+       },
+       {
+        "Id": "539053491"
+       },
+       {
+        "Id": "822342776"
+       }
+      ]
+     },
+     {
+      "Id": "3609265728",
+      "Name": "Play_MA_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Monster\\Play_MA_Main",
+      "GUID": "{31C1EEEB-BA7F-4BEA-B81B-A94D82686B33}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7473307",
+      "DurationMax": "1.5835172",
+      "MediaRefs": [
+       {
+        "Id": "259190848"
+       },
+       {
+        "Id": "378802375"
+       },
+       {
+        "Id": "672200095"
+       },
+       {
+        "Id": "832371534"
+       },
+       {
+        "Id": "891077320"
+       },
+       {
+        "Id": "936935450"
+       }
+      ]
+     },
+     {
+      "Id": "1327240191",
+      "Name": "Play_MD_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Monster\\Play_MD_Main",
+      "GUID": "{D0C2DD4E-325C-41A8-AAB4-45AE827CDF54}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4475",
+      "DurationMax": "1.568125",
+      "MediaRefs": [
+       {
+        "Id": "196794876"
+       },
+       {
+        "Id": "389350283"
+       },
+       {
+        "Id": "561361336"
+       },
+       {
+        "Id": "777475319"
+       }
+      ]
+     },
+     {
+      "Id": "1978162964",
+      "Name": "Play_MDamage_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Monster Damage\\Play_MDamage_Main",
+      "GUID": "{8F58D8EB-0C92-44DF-8F28-23D699631862}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.12820834",
+      "DurationMax": "0.384625",
+      "MediaRefs": [
+       {
+        "Id": "27727235"
+       },
+       {
+        "Id": "314941114"
+       },
+       {
+        "Id": "331792790"
+       },
+       {
+        "Id": "428612936"
+       },
+       {
+        "Id": "471139807"
+       },
+       {
+        "Id": "595690244"
+       },
+       {
+        "Id": "746145737"
+       },
+       {
+        "Id": "771801313"
+       }
+      ]
+     },
+     {
+      "Id": "2526232351",
+      "Name": "Play_MDrag_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Monster\\Play_MDrag_Main",
+      "GUID": "{CAFDFB58-2079-4CAD-A416-B8A1BCCB3C91}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "243504755"
+       }
+      ]
+     },
+     {
+      "Id": "1164316878",
+      "Name": "Play_MS_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Monster\\Play_MS_Main",
+      "GUID": "{C88C9D0B-5880-4E5A-AF57-77F68EFDB2D5}",
+      "DurationType": "OneShot",
+      "DurationMin": "16.922813",
+      "DurationMax": "17.17923",
+      "MediaRefs": [
+       {
+        "Id": "192096856"
+       },
+       {
+        "Id": "673111649"
+       }
+      ]
+     },
+     {
+      "Id": "1614763749",
+      "Name": "Play_Music_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_Music_Main",
+      "GUID": "{3AC7AC22-1C5C-4589-B056-0473EDDA5B1D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "354167331"
+       }
+      ]
+     },
+     {
+      "Id": "2025845440",
+      "Name": "Play_Torch",
+      "ObjectPath": "\\Events\\Default Work Unit\\Torch\\Play_Torch",
+      "GUID": "{54FA3A98-D0E1-49C8-8BE7-2B59C04E515E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8810833",
+      "DurationMax": "1.0897292",
+      "MediaRefs": [
+       {
+        "Id": "248804481"
+       },
+       {
+        "Id": "250376658"
+       },
+       {
+        "Id": "545319319"
+       }
+      ]
+     },
+     {
+      "Id": "3024457733",
+      "Name": "Play_Tranqillizer_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tranqillizer\\Play_Tranqillizer_Main",
+      "GUID": "{BD8E9E9A-7082-4BD4-BDA1-D52C940B1941}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5769167",
+      "DurationMax": "0.7692292",
+      "MediaRefs": [
+       {
+        "Id": "19486188"
+       },
+       {
+        "Id": "172710663"
+       },
+       {
+        "Id": "860491940"
+       },
+       {
+        "Id": "938792546"
+       }
+      ]
+     },
+     {
+      "Id": "970928956",
+      "Name": "Stop_Combat_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Stop_Combat_Music",
+      "GUID": "{6262E7CE-19FC-4C99-A965-A868555CC11D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2835351336",
+      "Name": "Groundtype",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Groundtype",
+      "GUID": "{488B76C1-9DA2-4C02-9316-BD01F373F438}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Groundtype\\Concrete",
+        "GUID": "{08E434E5-DAD1-4D36-B621-B5EE8DEE1DE0}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Groundtype\\Grass",
+        "GUID": "{BAC65329-FE90-4126-974E-931C482A2A0F}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2D76EDD6-CF18-1BEB-F6A0-DB1F55A629A2}"
+ }
+}

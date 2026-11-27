@@ -1,13 +1,17 @@
 [gd_scene format=3 uid="uid://hw2ryeke50e2"]
 
 [ext_resource type="Script" uid="uid://b0k3uqxab0lvm" path="res://entities/enemies/enemy.gd" id="1_mdlp7"]
-[ext_resource type="Texture2D" uid="uid://bxgc0q4n0ncbn" path="res://assets/placeholders/enemies/Blood Monster_A.png" id="2_jfsri"]
+[ext_resource type="Texture2D" uid="uid://bxgc0q4n0ncbn" path="res://Assets/placeholders/enemies/Blood Monster_A.png" id="2_jfsri"]
 [ext_resource type="Script" uid="uid://c2uffy15s0c41" path="res://entities/state/state_machine.gd" id="3_jfsri"]
 [ext_resource type="Script" uid="uid://d5b8x6kdmpo8" path="res://entities/state/enemy_idle.gd" id="4_snhs7"]
 [ext_resource type="Script" uid="uid://cbh7gkiirpga5" path="res://entities/state/enemy_chase.gd" id="5_jfsri"]
 [ext_resource type="Script" uid="uid://dyga88p0nvo47" path="res://entities/state/enemy_attack.gd" id="6_snhs7"]
 [ext_resource type="Script" uid="uid://cidv3rdrxvk6b" path="res://entities/state/enemy_die.gd" id="7_lc015"]
 [ext_resource type="Script" uid="uid://8crtgu8jyn5r" path="res://entities/state/enemy_patrol.gd" id="8_g6jqv"]
+[ext_resource type="WwiseEvent" uid="uid://bo6d0ddtnrt1r" path="res://Wwise/resources/Event/{8F58D8EB-0C92-44DF-8F28-23D699631862}.tres" id="9_fa8nk"]
+[ext_resource type="WwiseEvent" uid="uid://le5bqke3fqvg" path="res://Wwise/resources/Event/{D0C2DD4E-325C-41A8-AAB4-45AE827CDF54}.tres" id="10_00f8x"]
+[ext_resource type="WwiseEvent" uid="uid://betj4wim6gmpy" path="res://Wwise/resources/Event/{31C1EEEB-BA7F-4BEA-B81B-A94D82686B33}.tres" id="11_ayli3"]
+[ext_resource type="WwiseEvent" uid="uid://clkc20yxsjnh1" path="res://Wwise/resources/Event/{CAFDFB58-2079-4CAD-A416-B8A1BCCB3C91}.tres" id="12_ayli3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jfsri"]
 atlas = ExtResource("2_jfsri")
@@ -254,7 +258,6 @@ initial_state = NodePath("EnemyIdle")
 
 [node name="EnemyIdle" type="Node" parent="StateMachine" unique_id=754617441 node_paths=PackedStringArray("enemy", "spawn_point")]
 script = ExtResource("4_snhs7")
-move_speed = 200.0
 enemy = NodePath("../..")
 spawn_point = NodePath("../../PatrolPoints/PointA")
 metadata/_custom_type_script = "uid://d5b8x6kdmpo8"
@@ -292,5 +295,19 @@ top_level = true
 [node name="PointA" type="Marker2D" parent="PatrolPoints" unique_id=1025544620]
 
 [node name="PointB" type="Marker2D" parent="PatrolPoints" unique_id=1244206325]
+
+[node name="Monster_Damage" type="AkEvent2D" parent="." unique_id=1560557653]
+event = ExtResource("9_fa8nk")
+
+[node name="Monster_Dying" type="AkEvent2D" parent="." unique_id=833108219]
+event = ExtResource("10_00f8x")
+
+[node name="Monster_ShortAttack" type="AkEvent2D" parent="." unique_id=2142922400]
+event = ExtResource("11_ayli3")
+
+[node name="Monster_Sleep" type="AkEvent2D" parent="." unique_id=966605673]
+
+[node name="Monster_Dragging" type="AkEvent2D" parent="." unique_id=1971750477]
+event = ExtResource("12_ayli3")
 
 [connection signal="body_entered" from="AttackHitbox" to="StateMachine/EnemyAttack" method="_on_attack_hitbox_body_entered"]

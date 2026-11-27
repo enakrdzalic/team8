@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://bakidqpkpn8ah"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_HeavyAttack_Main"
+id = 396585373
+guid = "{2F14897B-45E4-4DC2-A861-68659BF21D7D}"
+dummy = true

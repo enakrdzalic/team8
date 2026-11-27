@@ -55,7 +55,7 @@ func update_hitbox_offset(direction: Vector2) -> void:
 func attack() -> void:
 	hit_player_this_swing = false
 	sprite.play(&"enemy_attack")
-
+	enemy.get_node("Monster_ShortAttack").post_event()
 func try_damage_player() -> void:
 	if hit_player_this_swing or hitbox == null or not is_instance_valid(player):
 		return

@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://bwt4kef65d88k"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_MS_Main"
+id = 1164316878
+guid = "{C88C9D0B-5880-4E5A-AF57-77F68EFDB2D5}"
+dummy = true

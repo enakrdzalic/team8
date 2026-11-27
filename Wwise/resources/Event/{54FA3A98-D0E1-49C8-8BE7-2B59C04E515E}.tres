@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://jyblkuu5vjfy"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_Torch"
+id = 2025845440
+guid = "{54FA3A98-D0E1-49C8-8BE7-2B59C04E515E}"
+dummy = true

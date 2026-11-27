@@ -6,6 +6,7 @@ const BEAM_REACH := 120.0
 const GLOW_RADIUS := 36.0
 
 var glow_enabled := false
+var was_enabled := false
 
 
 func _ready() -> void:
@@ -19,6 +20,10 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
+	if enabled and not was_enabled:
+		$Torch_SFX.post_event()
+		print("TORCH ON")
+	was_enabled = enabled
 	var body := get_parent() as CharacterBody2D
 	if body == null:
 		return

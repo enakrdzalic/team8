@@ -1,0 +1,71 @@
+class_name AK
+
+class EVENTS:
+
+	const PLAY_AMB_MAIN : int = 1871703286
+	const PLAY_BG_MAIN : int = 3981986209
+	const PLAY_FOOTSTEP_MAIN : int = 1262687212
+	const PLAY_HEAVYATTACK_MAIN : int = 396585373
+	const PLAY_MA_MAIN : int = 3609265728
+	const PLAY_MD_MAIN : int = 1327240191
+	const PLAY_MDRAG_MAIN : int = 2526232351
+	const PLAY_MS_MAIN : int = 1164316878
+	const PLAY_MDAMAGE_MAIN : int = 1978162964
+	const PLAY_MUSIC_MAIN : int = 1614763749
+	const STOP_COMBAT_MUSIC : int = 970928956
+	const PLAY_TORCH : int = 2025845440
+	const PLAY_TRANQILLIZER_MAIN : int = 3024457733
+
+class STATES:
+	pass
+
+class SWITCHES:
+
+	class GROUNDTYPE:
+		const GROUP : int = 2835351336
+	
+		class SWITCH:
+			const CONCRETE : int = 841620460
+			const GRASS : int = 4248645337
+
+
+class GAME_PARAMETERS:
+
+	const SS_AIR_FEAR : int = 1351367891
+	const SS_AIR_FREEFALL : int = 3002758120
+	const SS_AIR_FURY : int = 1029930033
+	const SS_AIR_MONTH : int = 2648548617
+	const SS_AIR_PRESENCE : int = 3847924954
+	const SS_AIR_RPM : int = 822163944
+	const SS_AIR_SIZE : int = 3074696722
+	const SS_AIR_STORM : int = 3715662592
+	const SS_AIR_TIMEOFDAY : int = 3203397129
+	const SS_AIR_TURBULENCE : int = 4160247818
+
+class TRIGGERS:
+	pass
+
+class BANKS:
+
+	const PLAYER : int = 1069431850
+
+class AUX_BUSSES:
+	pass
+
+class ACOUSTIC_TEXTURES:
+
+	const ACOUSTIC_BANNER : int = 4168643977
+	const ANECHOIC : int = 1873957695
+	const BRICK : int = 504532776
+	const CARPET : int = 2412606308
+	const CONCRETE : int = 841620460
+	const CORK_TILES : int = 3195498748
+	const CURTAINS : int = 2928161104
+	const DRYWALL : int = 3670307564
+	const FABRIC : int = 1970351858
+	const MOUNTAIN : int = 513139656
+	const TILE : int = 2637588553
+	const WOOD : int = 2058049674
+	const WOOD_BRIGHT : int = 4262522749
+	const WOOD_DEEP : int = 1755085759
+

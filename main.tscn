@@ -1,15 +1,42 @@
 [gd_scene format=3 uid="uid://c3ybdg3vo7sqx"]
 
+[ext_resource type="WwiseBank" uid="uid://bkestvr0rq8bk" path="res://Wwise/resources/SoundBank/{2A20D06E-CCD5-43BD-807E-9D3D62AED106}.tres" id="1_5vw27"]
 [ext_resource type="PackedScene" uid="uid://cfmhek0hfjner" path="res://entities/player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://hw2ryeke50e2" path="res://entities/enemies/sample_enemy.tscn" id="2_0xm2m"]
+[ext_resource type="WwiseEvent" uid="uid://ciw3518cnxlx7" path="res://Wwise/resources/Event/{4B3FEDE7-F5FA-43C5-AF3B-B1DCF46FF1ED}.tres" id="2_4c57u"]
+[ext_resource type="WwiseEvent" uid="uid://cpw8sahs4s0vm" path="res://Wwise/resources/Event/{BF1A7A68-C191-40B0-87CD-21BFBE5E014F}.tres" id="2_dg77c"]
+[ext_resource type="WwiseEvent" uid="uid://0x7707i050qb" path="res://Wwise/resources/Event/{3AC7AC22-1C5C-4589-B056-0473EDDA5B1D}.tres" id="3_efxa6"]
 [ext_resource type="Script" uid="uid://bgq4nemio4wyn" path="res://maps/zone_camera.gd" id="4_zones"]
 [ext_resource type="Script" uid="uid://du68dvp5ugv2c" path="res://entities/player/flashlight.gd" id="5_flash"]
+[ext_resource type="WwiseEvent" uid="uid://jyblkuu5vjfy" path="res://Wwise/resources/Event/{54FA3A98-D0E1-49C8-8BE7-2B59C04E515E}.tres" id="6_kek77"]
 [ext_resource type="Script" uid="uid://bl7qfwxtdrm5y" path="res://UI/night_mode.gd" id="6_night"]
 [ext_resource type="Texture2D" uid="uid://df5j57iwlgk66" path="res://Assets/Art/city_map.png" id="7_city"]
 [ext_resource type="Script" uid="uid://dur3xre0b0h23" path="res://maps/city_collision.gd" id="8_blocks"]
 
 [node name="Main" type="Node2D" unique_id=1912012056]
 y_sort_enabled = true
+
+[node name="AkBank" type="AkBank" parent="." unique_id=1104292220]
+bank = ExtResource("1_5vw27")
+load_on = 1
+unload_on = 3
+
+[node name="Play_BG_Main" type="AkEvent2D" parent="." unique_id=1096296272]
+event = ExtResource("2_dg77c")
+trigger_on = 1
+stop_on = 3
+
+[node name="Play_Amb_Main" type="AkEvent2D" parent="." unique_id=478833893]
+event = ExtResource("2_4c57u")
+trigger_on = 1
+stop_on = 3
+
+[node name="Combat_Music" type="AkEvent2D" parent="." unique_id=675162733]
+event = ExtResource("3_efxa6")
+stop_fade_time = 3000
+
+[node name="Stop_Combat_Music" type="AkEvent2D" parent="." unique_id=1676568059]
+stop_fade_time = 2000
 
 [node name="City" type="Sprite2D" parent="." unique_id=611701136]
 texture_filter = 1
@@ -22,11 +49,14 @@ script = ExtResource("8_blocks")
 
 [node name="Player" parent="." unique_id=1437222079 instance=ExtResource("1_ig7tw")]
 position = Vector2(1484, 1804)
-move_factor = 2.5
-camera_zoom_factor = 1.5
+
+[node name="AkListener2D" type="AkListener2D" parent="Player" unique_id=344281900]
 
 [node name="Flashlight" type="PointLight2D" parent="Player" unique_id=614478455]
 script = ExtResource("5_flash")
+
+[node name="Torch_SFX" type="AkEvent2D" parent="Player/Flashlight" unique_id=885724697]
+event = ExtResource("6_kek77")
 
 [node name="ZoneCamera" type="Camera2D" parent="." unique_id=463087367]
 zoom = Vector2(2, 2)
